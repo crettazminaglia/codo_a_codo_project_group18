@@ -1,0 +1,16 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+#about, #social_media{
+    text-align: center;
+    border-color: black;
+}
+
+body{
+    background-image: url(../img/fondo.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
