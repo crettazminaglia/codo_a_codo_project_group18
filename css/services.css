@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#main_title{
+    color: white
+}
+
+/*
+#section p{
+}*/
+
+.section1_p{
+    border: 2px solid blue;
+    text-align: center;
+
+}
+
+#paragr1{
+    border: 2px solid white;
+}
+
+
+html{
+    background-image: linear-gradient(rgb(241, 241, 241),rgb(224, 202, 202));
+    background-repeat:no-repeat;
+    max-height: 1020px;
+    max-width: 1900px;
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    background-color: steelblue;
+    border-radius: 20px;
+    height: 100px;
+}
+
+header h1{
+    position: absolute;
+    text-align: left;
+    color: rgb(221, 207, 207);
+    left: 50px;
+    top: 45px;
+}
+
+nav{
+    position: absolute;
+    max-width: 1300px;
+    left: 1100px;
+    width: 100%;
+    top: 50px;
+}
+
+nav a{
+    background-image: linear-gradient(lightblue,steelblue);
+    border: 1px solid rgb(255, 255, 255);
+    margin: 20px 0 0px 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    max-width: 1300px;
+    font-size: 1.5em;
+    display: inline;
+    color: white;
+    width: 100%;
+}
+
+main{
+    background-color: steelblue;
+    border-radius: 20px;
+    height: 750px;
+}
+
+main section h2{
+    background-image: linear-gradient(lightblue,steelblue);
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+main section p{
+    text-align: center;
+    font-size: 1.2em;
+}
