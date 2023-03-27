@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 5px;
     margin: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -10,9 +10,6 @@
     color: white
 }
 
-/*
-#section p{
-}*/
 
 .section1_p{
     border: 2px solid blue;
@@ -85,4 +82,8 @@ main section h2{
 main section p{
     text-align: center;
     font-size: 1.2em;
+}
+
+.social-icons{
+    color: black;
 }
