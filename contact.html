@@ -23,15 +23,16 @@
 
 <body>
     <header>
-        <section>
-            <img src="./img/LogoCoDEVC.jpg" alt="LogoCoDEVC">
+        <a name="subir"></a>
+        <section class="Logo">
+            <img src="./img/LogoCoDEVC.jpg" alt="LogoCoDEVConnect">
         </section>
-        <section>
+        <section class="Menu">
             <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Servicios</a>
-                <a href="#">Nosotros</a>
-                <a href="#">Contacto</a> <!--Esta es la pag en la que estamos, marcar de otro color-->
+                <a href="index.html">Inicio</a>
+                <a href="services.html">Servicios</a>
+                <a href="about.html">Nosotros</a>
+                <a href="contact.html">Contacto</a> <!--Esta es la pag en la que estamos, marcar de otro color-->
             </nav>
         </section>
 
@@ -39,7 +40,8 @@
 
     <main>
         <h1>Conexión CoDEVConnect</h1>
-        <section>
+    
+        <section id="Usuario">
             <h2 >Contactanos</h2>
             <!-- Acá va la tabla / formulario de contacto-->
             <form action="# va un link" method="get">
@@ -49,32 +51,37 @@
                     <label for="Empresa">Nombre de la empresa/emprendimiento:</label>
                     <input type="text" name="Empresa" id="Empresa">
     <br>
-                    <label for="Name">Nombre</label>
+                    <label for="Name" required>Nombre</label>
                     <input type="text" id="Name" name="Name">
     
                     <label for="lastname">Apellido</label>
                     <input type="text" id="lastname" name="lastname">
     <br>   
-                    <label for="Email">Email</label>
+                    <label for="Email" required>Email</label>
                     <input type="email" id="Email" name="Email" placeholder="nombre@gmail.com">
     <br>
-                    <label for="Servicio">Servicio requerido:</label>
+                    <label for="Servicio" required>Servicio requerido:</label>
     <br>                <input type="checkbox" name="tipodeservicio" id="tipodeservicio" value="Creación de Sitio Web">Creación de Sitio Web
     <br>                <input type="checkbox" name="tipodeservicio" id="tipodeservicio" value="Desarrollo de logo">Desarrollo de logo
     <br>                <input type="checkbox" name="tipodeservicio" id="tipodeservicio" value="Mejora de Sitio Web">Mejora de Sitio Web
+
+    <br>            <button type="submit">Enviar</button>
+                    <button type="reset">Borrar todo</button>
                 </fieldset>
 
         </section>
-        <section>
+        <section id="RedesSociales">
             <h2>Redes Sociales</h2>
             <nav>
                 <!--Redes sociales de CoDEVConnect-->
-                <a href="#">LinkdIn</a>
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">Youtube</a>
+                <a href="https://www.linkedin.com/" id="LinkedIn" target="_blank">LinkedIn</a>
+                <a href="https://www.facebook.com/" id="Facebook" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/" id="Instagram" target="_blank">Instagram</a>
+                <a href="https://www.youtube.com/" id="YouTube" target="_blank">YouTube</a>
             </nav>
         </section>
+
+        <a href="#subir">Subir</a>
 
     </main>
 
