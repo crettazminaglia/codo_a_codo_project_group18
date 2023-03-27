@@ -73,6 +73,7 @@ html{
 }
 
 .favi a{
+    justify-self: center;
     color: black;
     padding: 5px;
 }
