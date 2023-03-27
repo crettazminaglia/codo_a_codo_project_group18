@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    background-image: linear-gradient(white,antiquewhite,lightgray);
+}   
+
+.grid_layout{
+    display: grid;
+    grid-template-columns: 28% 40% 28%;
+    grid-template-rows: 15% 73% 20%;
+    justify-content: center;
+    gap: 1em;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+.image{
+    background-image: linear-gradient(lightblue,steelblue);
+    border: 1px solid black;
+    border-radius: 10px;
+    grid-column: 1;
+}
+
+.image img{
+    position: absolute;
+    left: 5%;
+    bottom: 80%
+}
+
+.menu{
+    background-image: linear-gradient(lightblue,steelblue);
+    border: 1px solid black;
+    border-radius: 10px;
+    grid-column: 2/4;
+}
+
+.menu a{
+    background-image: linear-gradient(lightblue,steelblue);
+    border: 1px solid black;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: justify;
+    color: white;
+    padding: 10px;
+}
+
+.menu a:hover{
+    color: orange;
+}
+
+.box1, .box2, .box3{
+    background-image: linear-gradient(lightblue,steelblue);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.box2 h2{
+    background-image: linear-gradient(lightblue,steelblue);
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+    width: 90%;
+}
+
+.favi{
+    background-image: linear-gradient(lightblue,steelblue);
+    align-self: baseline;
+    border-radius: 10px;
+    grid-column: 1/4;
+}
+
+.favi a{
+    color: black;
+    padding: 5px;
+}
+
+.foot{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
