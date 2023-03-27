@@ -6,38 +6,34 @@ html{
     background-image: linear-gradient(white,antiquewhite,lightgray);
 }   
 
-.grid_layout{
-    display: grid;
-    grid-template-columns: 28% 40% 28%;
-    grid-template-rows: 15% 73% 20%;
-    justify-content: center;
-    gap: 1em;
-    height: 100vh;
+header{
+    background-image: linear-gradient(rgba(173, 216, 230,1),rgba(70, 130, 180,1));
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 1900px;
+    min-height: 100px;
+    position: sticky;
+}
+
+img{
+    position: absolute;
+    max-height: 200px;
+    max-width: 300px;
+    top: -35%;
+    margin: 0;
+    left: 2%;
+}
+
+nav{
+    position: absolute;
+    max-width: 500px;
     width: 100%;
     margin: 0;
+    left: 70%;
+    top: 40%;
 }
 
-.image{
-    background-image: linear-gradient(lightblue,steelblue);
-    border: 1px solid black;
-    border-radius: 10px;
-    grid-column: 1;
-}
-
-.image img{
-    position: absolute;
-    bottom: 80%;
-    left: 5%;
-}
-
-.menu{
-    background-image: linear-gradient(lightblue,steelblue);
-    border: 1px solid black;
-    border-radius: 10px;
-    grid-column: 2/4;
-}
-
-.menu a{
+nav a{
     background-image: linear-gradient(lightblue,steelblue);
     border: 1px solid black;
     text-decoration: none;
@@ -48,8 +44,19 @@ html{
     margin: 5px;
 }
 
-.menu a:hover{
+nav a:hover{
     color: orange;
+}
+
+.grid_layout{
+    grid-template-columns: 15% 50% 15%;
+    grid-template-rows: 95%;
+    justify-content: center;
+    height: 77.5vh;
+    display: grid;
+    width: 100%;
+    margin: 0;
+    gap: 1em;
 }
 
 .box1, .box2, .box3{
@@ -70,20 +77,24 @@ html{
     font-size: 2rem;
 }
 
-.favi{
+footer{
     background-image: linear-gradient(lightblue,steelblue);
-    align-self: baseline;
     border-radius: 10px;
-    grid-column: 1/4;
+    margin-inline: 10px;
+    position: relative;
+    min-height: 100px;
 }
 
-.favi a{
+footer a{
+    position: relative;
     color: black;
     padding: 5px;
+    left: 47%;
 }
 
 .foot{
+    position: relative;
     text-align: center;
-    font-size: 1.2em;
     font-weight: bold;
+    font-size: 1.2em;
 }
