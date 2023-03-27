@@ -1,11 +1,20 @@
 *{
     box-sizing: border-box;
+    padding: 5px;
+    margin: 5px;
     background-color: #02A9E0;
     font-family: 'Merriweather', serif;
-    font: white;
-    link: #F9CB0F;
-    vlink: #511C5E;
+    font: #FFFFFF;
 }
+
+.body{
+    background-image: ../img/fondo.avif;
+}
+
+legend{
+    text-align: center;
+}
+
 
 form{
     background-color: rgba(216,240,237,0.3);
