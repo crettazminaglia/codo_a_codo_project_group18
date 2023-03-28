@@ -3,11 +3,11 @@
 }
 
 html{
-    background-image: linear-gradient(white,antiquewhite,lightgray);
-}   
+    background-color: rgb(95, 158, 160);
+}
 
 header{
-    background-image: linear-gradient(rgba(173, 216, 230,1),rgba(70, 130, 180,1));
+    background-image: linear-gradient(rgba(173, 216, 230,0.5),rgba(70, 130, 180,0.5));
     border-radius: 10px;
     margin-bottom: 10px;
     max-width: 1900px;
@@ -49,32 +49,25 @@ nav a:hover{
 }
 
 .grid_layout{
-    grid-template-columns: 15% 50% 15%;
-    grid-template-rows: 95%;
+    grid-template-columns: 20% 50% 20%;
+    grid-template-rows: 20% 50% 20%;
     justify-content: center;
     height: 77.5vh;
     display: grid;
     width: 100%;
     margin: 0;
-    gap: 1em;
+    row-gap: 2em;
+    column-gap: 4em;
 }
 
-.box1, .box2, .box3{
-    background-image: linear-gradient(lightblue,steelblue);
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9{
+    background-image: linear-gradient(rgba(173, 216, 230,0.5),rgba(70, 130, 180,0.5));
     border-radius: 10px;
-    text-align: center;
 }
 
-.box2 h2{
+.box5{
     background-image: linear-gradient(lightblue,steelblue);
-    border: 1px solid black;
-    border-radius: 10px;
-    color: white;
-    width: 90%;
-}
-
-.box3{
-    font-size: 2rem;
+    border-radius: 30%;
 }
 
 footer{
