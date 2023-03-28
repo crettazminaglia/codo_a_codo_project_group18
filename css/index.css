@@ -3,33 +3,32 @@
 }
 
 html{
-    background-image: radial-gradient(rgb(135, 175, 208),rgb(177, 213, 215));
+    background-image: linear-gradient(rgb(177, 213, 215) 5%,rgb(135, 175, 208),rgb(177, 213, 215) 90%);
 }
 
 header{
-    background-image: linear-gradient(rgba(70, 130, 180,0.9), rgba(173, 216, 230,0.3));
+    background-image: linear-gradient(rgba(70, 130, 180,0.9), rgb(177, 213, 215,0.2));
     border-radius: 10px;
     margin-bottom: 10px;
-    max-width: 1900px;
-    min-height: 100px;
+    max-width: 1920px;
+    min-height: 110px;
     position: sticky;
 }
 
-img{
+.img_h{
     position: absolute;
-    max-height: 200px;
-    max-width: 300px;
-    top: -35%;
-    margin: 0;
+    min-height: 150px;
+    max-width: 200px;
     left: 2%;
+    top: 5%;
 }
 
 nav{
     position: absolute;
-    max-width: 500px;
+    max-width: 400px;
     width: 100%;
     margin: 0;
-    left: 70%;
+    left: 78%;
     top: 40%;
 }
 
@@ -52,17 +51,23 @@ nav a:hover{
     grid-template-columns: 25% 1fr 25%;
     grid-template-rows: 25% 1fr 25%;
     justify-content: center;
-    height: 77vh;
-    display: grid;
-    width: 100%;
-    margin: 5px;
-    row-gap: 2em;
     column-gap: 3em;
+    display: grid;
+    height: 77vh;
+    row-gap: 2em;
+    width: 100%;
+    margin-top: 5px;
 }
 
 .box1, .box2, .box3, .box4, .box6, .box7, .box8, .box9{
     border: 1px solid black;
     border-radius: 10px;
+}
+
+.box1, .box2, .box3, .box4, .box6, .box7, .box8, .box9, img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
 .box2{
@@ -92,8 +97,10 @@ footer a{
 }
 
 .foot{
-    position: relative;
-    text-align: center;
+    position: absolute;
     font-weight: bold;
     font-size: 1.2em;
+    padding: 0;
+    left: 44%;
+    margin: 0;
 }
