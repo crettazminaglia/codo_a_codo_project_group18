@@ -7,14 +7,15 @@
 
 
 #main_title{
-    color: white
+    color: black;
+    font-family: 'Merriweather', serif;
 }
 
 
 .section1_p{
     border: 2px solid blue;
     text-align: center;
-
+    font-family: 'Merriweather', serif;
 }
 
 #paragr1{
@@ -84,6 +85,9 @@ main section p{
     font-size: 1.2em;
 }
 
-.social-icons{
-    color: black;
+.foot{
+    position: relative;
+    font-weight: bold;
+    font-size: 1.2em;
+    color:cornflowerblue;
 }
