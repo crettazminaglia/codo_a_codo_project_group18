@@ -2,14 +2,16 @@
     box-sizing: border-box;
     padding: 5px;
     margin: 5px;
-    background-color: #02A9E0;
     font-family: 'Merriweather', serif;
-    font: #FFFFFF;
 }
 
-.body{
-    background-image: ../img/fondo.avif;
+body{
+    background-image: url(../img/Fondoprueba.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
 
 legend{
     text-align: center;
@@ -17,7 +19,7 @@ legend{
 
 
 form{
-    background-color: rgba(216,240,237,0.3);
+    background-color: rgba(216,240,237,0.5);
     border: 2px solid #BDBDBD;
     align-self: center;
     align-content: left;
@@ -25,12 +27,26 @@ form{
 
 h1{
     font-family: 'Poller One', cursive;
-     font-weight: 700;
-    font: white;
+    font-weight: 700;
+    color: white;
 }
 
 h2{
     font-family: 'Merriweather', serif;
     font-weight: 400;
-    font: white;
+    color: white;
+}
+button{
+    color: rgb(252, 255, 254) ;
+    background-color: rgba(127, 176, 255, 0.5);
+    border-color: rgba(127, 176, 255, 0.3);
+    border-radius: 3px;
+
+}
+button:hover{
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+
 }
