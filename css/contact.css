@@ -5,6 +5,16 @@
     font-family: 'Merriweather', serif;
 }
 
+header{
+    margin: 0px;
+    /*background-color: #78d9fa;*/
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(34,193,195,0.7161239495798319) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: sticky;
+    top: 0;
+}
+
 body{
     background-image: url(../img/Fondoprueba.jpg) ;
     background-size: cover;
