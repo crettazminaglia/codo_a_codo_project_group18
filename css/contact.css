@@ -12,11 +12,9 @@ body{
     background-attachment: fixed;
 }
 
-
 legend{
     text-align: center;
 }
-
 
 form{
     background-color: rgba(216,240,237,0.5);
@@ -36,17 +34,17 @@ h2{
     font-weight: 400;
     color: white;
 }
+
 button{
     color: rgb(252, 255, 254) ;
     background-color: rgba(127, 176, 255, 0.5);
     border-color: rgba(127, 176, 255, 0.3);
     border-radius: 3px;
-
 }
+
 button:hover{
     font-weight: bold;
     color: white;
     background-color: black;
     border-radius: 5px;
-
 }
