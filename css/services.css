@@ -49,7 +49,7 @@ header h1{
 nav{
     position: absolute;
     max-width: 1300px;
-    left: 1100px;
+    left: 1400px;
     width: 100%;
     top: 50px;
 }
@@ -89,5 +89,32 @@ main section p{
     position: relative;
     font-weight: bold;
     font-size: 1.2em;
-    color:cornflowerblue;
+    color: steelblue
+}
+
+.fa-brands:hover{
+    color: grey;
+    font-size: 32px;
+
+}
+
+.fa-brands{
+    font-size: 30px;
+    color: steelblue;
+}
+
+.fa-youtube{
+    color: red;
+}
+
+.fa-github{
+    color: black;
+}
+
+.fa-facebook{
+    color: blue;
+}
+
+.fa-instagram{
+    color: black;
 }
