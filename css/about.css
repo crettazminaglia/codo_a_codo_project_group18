@@ -3,19 +3,42 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+
 header, footer{
     background-color: rgba(6, 66, 134, 0.4);
     padding: 1rem 1rem;
     position: sticky;
     top: 0;
+    animation-name: cambiarColorFondo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;   
+}
+
+@keyframes cambiarColorFondo{
+    from {background-color: rgba(6, 66, 134, 0.4);}
+    to{ background-color: rgba(247, 248, 253, 0.8);}
+}
+
+a:link{
+    color: blue;
+    font-weight: bold;
+}
+
+a:active{
+    color: white;
 }
 
 main{
     padding: 2rem;
 }
 
-#main_title{
+h1{
     margin: 1rem;
+    font-weight: bold;
+}
+
+h1:hover{
+    transform: scale(1.2);
 }
 
 body{
@@ -23,6 +46,7 @@ body{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #about{
@@ -40,6 +64,7 @@ body{
     padding: 2rem 1 rem;
     height: auto;
     overflow: auto;
+    transform: translate(5px, 5px);
 }
 
 #article_section article h2{
@@ -51,6 +76,9 @@ body{
     font-weight: bold;
     border: none;
     background-color: rgba(6, 66, 134, 0.4);
-    border-radius: 5px;
-    
+    border-radius: 5px;  
+}
+
+h2:hover{
+    transform: scale(1.2);
 }
