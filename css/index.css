@@ -17,7 +17,8 @@
 }
 
 html{
-    background-image: var(--html-color);
+    background-image: url(../img/Fondoprueba.jpg);
+    background-size: cover;
 }
 
 /* ===== Header =====*/
