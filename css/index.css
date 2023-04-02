@@ -7,24 +7,32 @@
 :root{
     /* ===== Colores ===== */
     --html-color: linear-gradient(rgb(177, 213, 215) 5%,rgb(135, 175, 208),rgb(177, 213, 215) 90%);
-    --header-color: linear-gradient(rgba(70, 130, 180,0.9), rgb(177, 213, 215,0.2));
+    /*--header-color: linear-gradient(rgba(70, 130, 180,0.9), rgb(177, 213, 215,0.5));*/
     --nav-a-color: linear-gradient(lightblue,steelblue);
-    --footer-color: linear-gradient(rgba(173, 216, 230,0.3),rgba(70, 130, 180,0.9));
+    /*--footer-color: linear-gradient(rgba(173, 216, 230,0.3),rgba(70, 130, 180,0.9));*/
 
     /* ===== Bordes ===== */
 
     --border: border 10% radius;
 }
 
+/* ===== HTML =====*/
+
 html{
     background-image: url(../img/Fondoprueba.jpg);
     background-size: cover;
 }
 
+/* ===== Body =====*/
+
+body{
+    background-image: url(/img/firma.png);
+    background-size: 15px;
+}
+
 /* ===== Header =====*/
 
 header{
-    background-image: var(--header-color);
     border-radius: var(--border-radius);
     margin-bottom: 30px;
     max-width: 1920px;
@@ -69,6 +77,7 @@ nav a:hover{
 }
 
 /* ===== Main ===== */
+
 
 /* ===== Grid ===== */
 
@@ -125,7 +134,6 @@ nav a:hover{
 /* ===== Footer ===== */
 
 footer{
-    background-image: var(--footer-color);
     border-radius: 10px;
     margin-top: 1.3rem;
     position: relative;
