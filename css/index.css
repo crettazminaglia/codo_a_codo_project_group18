@@ -10,10 +10,6 @@
     /*--header-color: linear-gradient(rgba(70, 130, 180,0.9), rgb(177, 213, 215,0.5));*/
     --nav-a-color: linear-gradient(lightblue,steelblue);
     /*--footer-color: linear-gradient(rgba(173, 216, 230,0.3),rgba(70, 130, 180,0.9));*/
-
-    /* ===== Bordes ===== */
-
-    --border: border 10% radius;
 }
 
 /* ===== HTML =====*/
