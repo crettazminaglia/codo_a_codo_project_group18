@@ -16,6 +16,8 @@
 
 html{
     background-image: url(../img/Fondoprueba.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -23,6 +25,7 @@ html{
 
 body{
     background-image: url(/img/firma.png);
+    background-attachment: fixed;
     background-size: cover;
     background-size: 15px;
 }
@@ -30,42 +33,34 @@ body{
 /* ===== Header =====*/
 
 header{
-    margin-bottom: 5rem;
-    position: relative;
-    max-width: 190vh;
-    width: 100%;
-    height: 10vh;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    align-items: center;
+    min-height: 10rem;
+    position: sticky;
+    padding: 0rem 3rem;
+    display: flex;
 }
 
 /* ===== Logo ===== */
 
-.img_h{
-    position: absolute;
-    min-height: 150px;
-    max-width: 200px;
-    left: 2%;
-    top: -5%;
-}
 
 /* ===== Menu ===== */
 
 nav{
-    position: absolute;
-    max-width: 400px;
+    min-width: 400px;
     margin: 0;
-    left: 47rem;
-    top: 4rem;
 }
 
 nav a{
     background-image: var(--nav-a-color);
     border: 1px solid black;
     text-decoration: none;
-    border-radius: 10%;
     text-align: justify;
-    color: white;
+    border-radius: 10%;
     padding: 0.6rem;
     margin: 0.5rem;
+    color: white;
 }
 
 nav a:hover{
@@ -74,16 +69,20 @@ nav a:hover{
 
 /* ===== Main ===== */
 
+main{
+    display: flex;
+}
 
 /* ===== Grid ===== */
 
 .grid_layout{
     grid-template-columns: 25% 1fr 25%;
     margin-left: 1.4rem;
+    position: relative;
     column-gap: 1rem;
     row-gap: 1rem;
     display: grid;
-    height: 72vh;
+    height: 70vh;
     width: 185vh;
 }
 
@@ -132,43 +131,38 @@ nav a:hover{
 /* ===== Footer ===== */
 
 footer{
+    justify-content: center;
     border-radius: 10px;
-    position: relative;
     min-height: 10vh;
+    display: flex;
+}
+
+/* ===== Socials ===== */
+
+.socials{
+    display: flex;
 }
 
 /* ===== Favicon ===== */
 
 .fa-twitter{
-    position: absolute;
     font-size: 1.3rem;
     color: black;
-    left: 43%;
-    top: 20%;
 }
 
 .fa-youtube{
-    position: absolute;
     font-size: 1.3rem;
     color: black;
-    left: 46%;
-    top: 20%;
 }
 
 .fa-instagram{
-    position: absolute;
     font-size: 1.3rem;
     color: black;
-    left: 49%;
-    top: 20%;
 }
 
 .fa-linkedin{
-    position: absolute;
     font-size: 1.3rem;
     color: black;
-    left: 52%;
-    top: 20%;
 }
 
 .fa-brands:hover{
@@ -179,9 +173,6 @@ footer{
 /* ===== Foot Text ===== */
 
 .foot-text{
-    position: absolute;
     font-weight: bold;
     font-size: 1.3rem;
-    left: 41.5%;
-    top: 60%;
 }
