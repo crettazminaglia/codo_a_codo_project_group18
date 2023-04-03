@@ -9,7 +9,8 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    max-width: 85%;
+    
+    text-align: center;
 }
 
 header{
@@ -55,8 +56,8 @@ form{
 h1{
     font-family: 'Poller One', cursive;
     font-weight: 700;
-    color: white;
-    max-width: 85%;
+    color: deepskyblue;
+    
 }
 
 h2{
@@ -82,4 +83,9 @@ button:hover{
 #map{
     max-width: 95%;
     justify-content: left;
+}
+
+
+#CopyRight{
+    /*text-justify: center; Not working*/
 }
