@@ -24,7 +24,6 @@
 
 <body>
     <header>
-        <a name="subir"></a>
         <section id="flex-container1">
             <section class="Logo flex-item">
                 <img src="./img/LogoCoDEVC.jpg" alt="LogoCoDEVConnect">
@@ -41,40 +40,47 @@
     </header>
 
     <main>
-        <h1>Conexión CoDEVConnect</h1>
-        <section id="flex-container2">    
-            <section id="DelUsuario">
-                <h2 >Contactanos</h2>
-                <!-- Acá va la tabla / formulario de contacto-->
-                <form action="# va un link" method="get">
-                    <fieldset>
-                        <legend>Contanos de vos</legend>
+        <section id="Subir"> <!--Queda horrible al apretarlo - queda tapado por el header-->
+            <a name="subir"></a>
+        </section>
+        
+        <section>
+<br>        <h1>Conexión CoDEVConnect</h1>
+            <section id="flex-container2">    
+                <section id="DelUsuario">
+                    <h2 >Contactanos</h2>
+                    <!-- Acá va la tabla / formulario de contacto-->
+                    <form action="# va un link" method="get">
+                        <fieldset>
+                            <legend>Contanos de vos</legend>
 
-                        <!-- Eliminadas las leyendas, pero con placeholder que dice qué es cada campo. Más canchero-->
+                            <!-- Eliminadas las leyendas, pero con placeholder que dice qué es cada campo. Más canchero-->
 
-                        <!-- <label for="Empresa">Nombre de la empresa/emprendimiento:</label> -->
-                        <input type="text" name="Empresa" id="Empresa" placeholder="Empresa/Emprendimiento">
+                            <!-- <label for="Empresa">Nombre de la empresa/emprendimiento:</label> -->
+                            <input type="text" name="Empresa" id="Empresa" placeholder="Empresa/Emprendimiento">
     <br>
-                        <!-- <label for="Name" required>Nombre</label> -->
-                        <input type="text" id="Name" name="Name" placeholder="Nombre">
+                            <!-- <label for="Name" required>Nombre</label> -->
+                            <input type="text" id="Name" name="Name" placeholder="Nombre">
     
-                        <!-- <label for="lastname">Apellido</label> -->
-                        <input type="text" id="lastname" name="lastname" placeholder="Apellido">
+                            <!-- <label for="lastname">Apellido</label> -->
+                            <input type="text" id="lastname" name="lastname" placeholder="Apellido">
     <br>   
-                        <!-- <label for="Email" required>Email</label> -->
-                        <input type="email" id="Email" name="Email" placeholder="E-mail nombre@gmail.com">
+                            <!-- <label for="Email" required>Email</label> -->
+                            <input type="email" id="Email" name="Email" placeholder="E-mail nombre@gmail.com">
     <br>
-                        <label for="Servicio" required>Servicio requerido:</label>
-    <br>                    <input type="checkbox" name="tipodeservicio" id="tipodeservicio" value="Creación de Sitio Web">Creación de Sitio Web
-    <br>                    <input type="checkbox" name="tipodeservicio" id="tipodeservicio" value="Desarrollo de logo">Desarrollo de logo
-    <br>                    <input type="checkbox" name="tipodeservicio" id="tipodeservicio" value="Mejora de Sitio Web">Mejora de Sitio Web
+                            <label for="Servicio" required>Servicio requerido:</label>
+    <br>                        <input type="checkbox" name="tipodeservicio" id="tipodeservicio" value="Creación de Sitio Web">Creación de Sitio Web
+    <br>                        <input type="checkbox" name="tipodeservicio" id="tipodeservicio" value="Desarrollo de logo">Desarrollo de logo
+    <br>                        <input type="checkbox" name="tipodeservicio" id="tipodeservicio" value="Mejora de Sitio Web">Mejora de Sitio Web
 
-    <br>                <button type="submit">Enviar</button>
-                        <button type="reset">Borrar todo</button>
-                    </fieldset>
+    <br>                    <button type="submit">Enviar</button>
+                            <button type="reset">Borrar todo</button>
+                        </fieldset>
 
+                </section>
             </section>
         </section>
+
         <section id="Ubicación">
             <h2>Donde nos encontrás</h2>
             <nav>
@@ -110,6 +116,9 @@
             <a href="https://www.github.com/" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
       </nav>
+      <section id="CopyRight">
+        <p style="text-align: center;">&copy Copy Right CoDEVConnect</p>
+      </section>
     </footer>
 </body>
 </html>
