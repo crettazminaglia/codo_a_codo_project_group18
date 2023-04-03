@@ -1,12 +1,20 @@
 *{
     box-sizing: border-box;
-    padding: 5px;
-    margin: 5px;
     font-family: 'Merriweather', serif;
+    align-self: center;
+}
+
+body{
+    background-image: url(../img/Fondoprueba.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-width: 85%;
 }
 
 header{
     margin: 0px;
+    max-width: 98%;
     /*background-color: #78d9fa;*/
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(34,193,195,0.7161239495798319) 100%);
     background-size: cover;
@@ -15,11 +23,22 @@ header{
     top: 0;
 }
 
-body{
-    background-image: url(../img/Fondoprueba.jpg) ;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+#flex-container1{
+    border: 0.5px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+#flex-container2{
+    border: 0.5px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
 }
 
 legend{
@@ -37,6 +56,7 @@ h1{
     font-family: 'Poller One', cursive;
     font-weight: 700;
     color: white;
+    max-width: 85%;
 }
 
 h2{
@@ -57,4 +77,9 @@ button:hover{
     color: white;
     background-color: black;
     border-radius: 5px;
+}
+
+#map{
+    max-width: 95%;
+    justify-content: left;
 }
