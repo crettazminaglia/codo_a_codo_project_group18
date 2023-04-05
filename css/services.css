@@ -138,11 +138,18 @@ nav ul li ul li a:hover{
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
+#main_title{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
 main{
-    background-color: rgb(61, 58, 79);
+    /*background-color: rgb(61, 58, 79);*/
+    background-color: rgb(233, 232, 236);
     padding: 40px 20px;
     margin-top: 235px;
-    background-clip: url(../vid/backmain.mp4);
+    /*background-clip: url(../vid/backmain.mp4);*/
     background-size: cover;
     
 }
@@ -155,7 +162,7 @@ main{
     min-height: 100%;
     
 }*/
-  
+
 
 article{
     max-width: 1200px;
@@ -167,7 +174,28 @@ article{
     color: black;
 }
 
-/*@media screen and (max-width: 720px){
+#articles_section{
+    padding: 1rem;
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#articles_section article{
+    border: 2px solid steelblue;
+    text-align: center;
+    margin: 2rem;
+    padding: 1rem 1rem;
+    width: 90%;
+    max-width: 24rem;
+    height: 12rem;
+    border-radius: 1rem;
+    overflow: auto;
+    
+}
+
+
+@media screen and (max-width: 720px){
     .Search input{
         display: none;
     }
@@ -179,7 +207,7 @@ article{
         width: 100px;
     }
 
-}*/
+}
 
 /*nav > ul{
     flex-direction: column;
@@ -214,6 +242,14 @@ footer{
     bottom: 0;
     left: 0;
     background: white;
+}
+
+.foot_head{
+    position: relative;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: steelblue
+
 }
 
 .foot{
