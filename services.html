@@ -5,31 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/services.css">
+    <!--Fontawesome-->
     <script src="https://kit.fontawesome.com/510cf6bb16.js" crossorigin="anonymous"></script>
+    <!--Favicon-->
     <link rel="shortcut icon" href="./img/FaviconCoDEVC.ico" type="image/x-icon">
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+    <!--Animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Servicios</title>
 
 </head>
 <body>
     <header>
-    <div class="header_superior">
-        <div class="logo">
-            <img src="./img/logo_sin_fondo.png" alt="Logo">
-        </div>
-        <div class="Search">
+    <section class="header_superior">
+        <section class="logo">
+            <!--<img src="./img/logo_sin_fondo.png" alt="Logo">-->
+            <img class="animate__animated animate__bounce" src="./img/logo_sin_fondo.png" alt="Logo">
+        </section>
+        <section class="Search">
             <input type="Search" placeholder="que buscamos?">
-        </div>
-    </div>
-    <div class="container_menu">
+        </section>
+      </section>
+    <section class="container_menu">
         
-        <div class="menu">
+        <section class="menu">
+          <!--<input type="checkbox" id="check_menu">
+          <label id="#label_check" for="check_menu">
+            <i class="fa-solid fa-bars fa-lg icon_menu" style="color: #fefefe;"></i>
+          </label>-->
             <nav>
-                <ul><li><a href="./index.html">Inicio</a></li>
+                <ul><li><a href="./index.html"><i class="fa-solid fa-house fa-lg"></i></a></li>
                 <li><a href="#">Servicios</a>
                 <ul>
                     <li><a href="#">Diseño Web </a></li>
@@ -53,7 +62,7 @@
             <section>
               <h1 id="main_title">Equipo Multidiciplinar de profesionales</h1>
               <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, omnis natus? Explicabo doloribus hic mollitia itaque consectetur perspiciatis, minus expedita molestiae minima consequatur, eum eaque saepe voluptas ducimus laudantium architecto?
+                <p id="sub_title">¿Estás buscando un equipo de expertos que puedan ofrecerte una solución completa a tus necesidades tecnológicas? Ofrecemos un servicio de múltiples profesionales de diversas disciplinas tecnológicas que pueden brindarte soluciones personalizadas para tus desafíos más complejos.
               </p>
             </section>
     
@@ -61,25 +70,25 @@
     
                <article>
                     <h2>Diseño Web</h2>
-                    <p>¿Buscas crear una presencia en línea impactante y atractiva para tu negocio? ¡Tenemos la solución perfecta para ti! Ofrecemos servicios de diseño web personalizados y adaptados a las necesidades de tu empresa.</p>
+                    <p id="art1">¿Buscas crear una presencia en línea impactante y atractiva para tu negocio? ¡Tenemos la solución perfecta para ti! Ofrecemos servicios de diseño web personalizados y adaptados a las necesidades de tu empresa.</p>
                     <button><a href="#">+ Info</a></button>
                   </article>
     
                   <article>
                     <h2>Marketing</h2>
-                    <p>¿Quieres mejorar la visibilidad de tu marca y aumentar tus ventas? ¡Nuestro servicio de marketing es la solución para ti! Ofrecemos servicios de marketing digital personalizados que pueden ayudarte a alcanzar tus objetivos.</p>
+                    <p id="art2">¿Quieres mejorar la visibilidad de tu marca y aumentar tus ventas? ¡Nuestro servicio de marketing es la solución para ti! Ofrecemos servicios de marketing digital personalizados que pueden ayudarte a alcanzar tus objetivos.</p>
                     <button><a href="#">+ Info</a></button>
                   </article>
     
                   <article>
                     <h2>Ciberseguridad</h2>
-                    <p>¿Te preocupa por la seguridad de tu negocio? ¡Tenemos la solución para ti! Ofrecemos servicios de ciberseguridad que pueden proteger tu empresa contra amenazas en línea y garantizar que tus datos estén seguros y protegidos.</p>
+                    <p id="art3">¿Te preocupa por la seguridad de tu negocio? ¡Tenemos la solución para ti! Ofrecemos servicios de ciberseguridad que pueden proteger tu empresa contra amenazas en línea y garantizar que tus datos estén seguros y protegidos.</p>
                     <button><a href="#">+ Info</a></button>
                   </article>
     
                   <article>
                     <h2>Formación</h2>
-                    <p> ¡Nuestro servicio de formación es la solución perfecta para ti! Ofrecemos una amplia gama de cursos de formación que pueden ayudar a tu equipo a mejorar sus habilidades y rendimiento en el trabajo.</p>
+                    <p id="art4"> ¡Nuestro servicio de formación es la solución perfecta para ti! Ofrecemos una amplia gama de cursos de formación que pueden ayudar a tu equipo a mejorar sus habilidades y rendimiento en el trabajo.</p>
                     <button><a href="#">+ Info</a></button>
                   </article>
                   
@@ -101,7 +110,7 @@
           </section>
       </footer>
 
-    </div>
+    </section>
     
 </body>
 </html>

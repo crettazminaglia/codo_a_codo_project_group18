@@ -24,13 +24,15 @@ header{
     justify-content: space-between;
 }
 
+/*Logo*/
 .logo img{
-    width: 190px;
+    width: 130px;
 }
 
+/*Buscador*/
 .Search input{
     width: 300px;
-    padding: 10px;
+    padding: 5px;
 }
 
 /* Barra del menu */
@@ -61,6 +63,11 @@ nav ul li{
     list-style: none;
     position: relative;
 }
+
+nav > ul > li:first-child > a{
+    padding: 20px 35px;
+}
+
 
 nav > ul > li > a{
     height: 100%;
@@ -144,11 +151,15 @@ nav ul li ul li a:hover{
     color: black;
 }
 
+#sub_title{
+    text-align: center;
+}
+
 main{
     /*background-color: rgb(61, 58, 79);*/
     background-color: rgb(233, 232, 236);
     padding: 40px 20px;
-    margin-top: 235px;
+    margin-top: 185px;
     /*background-clip: url(../vid/backmain.mp4);*/
     background-size: cover;
     
@@ -194,7 +205,31 @@ article{
     
 }
 
+.icon_menu{
+    font-size: 26px;
+    color: white;
+    *padding: 2px;
+    cursor: pointer;
+    width: 26px;
+    height: 100%;
+    display: none;
+    align-items: center;
+}
 
+#label_check{
+    width: 26px;
+    height: 100%;
+    display: none;
+}
+
+#check_menu{
+    *display: none;
+}
+
+
+
+
+/*Responsive*/
 @media screen and (max-width: 720px){
     .Search input{
         display: none;
@@ -206,35 +241,62 @@ article{
     .logo img{
         width: 100px;
     }
+    /*Ojo anidado!!*/
+    nav > ul{
+        flex-direction: column;
+        background-color: #023877;
+        position: fixed;
+        left: 0;
+        top: 158px;
+        width: 100%;
+        height: 0px;
+        transition: all 300ms ease;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav > ul > li > a:hover{
+        transform: scale(1);
+    }
+
+    nav ul li ul{
+        left: 60px;
+    }
+
+    nav ul li ul{
+        left: 60px;
+    }
+
+    nav > ul > li:hover ul{
+        top: 50px;
+    }
+
+    nav > ul > li:first-child a{
+        background-position: 20px;
+    }
+
+    #selected{
+        transform: scale(1);
+    }
+
+    #label_check{
+        display: block;
+    }
+
+    .icon_menu{
+        display: flex;
+    }
+
+    #check_menu:checked ~ nav > ul{
+        height: 300px;
+        visibility: visible;
+        opacity: 1;
+
+    }
 
 }
-
-/*nav > ul{
-    flex-direction: column;
-    background-color: #023877;
-    position: fixed;
-    left: 0;
-    top: 158px;
-    width: 100%;
-    height: 300px;
-    transition: all 300ms ease;
-    z-index: 100;
-    opacity: 0;
-    visibility: hidden;
-}*/
-
-nav > ul > li > a:hover{
-    transform: scale(1);
-
-}
-
-nav ul li ul{
-    left: 60px;
-}
-
-nav > ul > li:hover ul{
-    top: 50px;
-}
+  
 
 footer{
     width: 100%;
