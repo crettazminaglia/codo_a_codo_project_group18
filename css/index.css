@@ -123,6 +123,39 @@ header{
 
 }
 
+/* ===== Menu responsive ===== */
+
+.menu_responsive{
+    height: 100%;
+}
+
+.menu_responsive li{
+    line-height: 50px;
+    list-style: none;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+
+.menu_responsive li:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    background: lightskyblue;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+.menu_responsive > ul{
+    height: 100%;
+    display: flex;
+}
+
+.menu_responsive ul li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+    display: none;
+}
+
 /* ===== Main ===== */
 
 main{
@@ -134,22 +167,21 @@ main{
 
 /* ===== boxes ===== */
 
-#flex-container1{
+#flex-container1, #flex-container3{
     display: flex;
 }
 
-.flexbox1{
+.flexbox1, .flexbox3{
     display: flex;
     flex-wrap: wrap;
     max-width: 30rem;
-    
 }
 
 .img1, .img2{
     display: flex;
     max-width: 480px;
     width: 100%;
-    height: 700px;
+    height: 500px;
     border-radius: 5%;
 }
 
@@ -176,7 +208,6 @@ main{
 
 .p-box2{
     font-size: 1.5rem;
-
     text-align: center;
     border: 2px solid black;
     border-radius: 2rem;
@@ -184,30 +215,15 @@ main{
     margin-top: 30px;
 }
 
-#flex-container3{
-    display: flex;
-}
-
-.flexbox3{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 30rem;
-}
-
-.img2{
-    display: flex;
-    max-width: 480px;
-    width: 100%;
-    height: 700px;
-}
 
 
 /* ===== Footer ===== */
 
+
 #footer{
     display: flex;
-    flex-wrap: wrap;
-    min-height: 10vh;
+    flex-direction: column;
+    min-height: 15vh;
     justify-content: center;
     border-radius: 10px;
 }
@@ -215,9 +231,12 @@ main{
 /* ===== Socials ===== */
 
 .socials{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-content: end;
+    flex: auto 1 1;
+    margin-bottom: 20px;
 }
 
 /* ===== Favicon ===== */
