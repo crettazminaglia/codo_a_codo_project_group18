@@ -258,8 +258,8 @@ article{
         transition: all 300ms ease;
         z-index: 100;
         opacity: 0;
-        visibility: hidden;*/
-    }
+        visibility: hidden;
+    }*/
 
     nav > ul > li > a:hover{
         transform: scale(1);
