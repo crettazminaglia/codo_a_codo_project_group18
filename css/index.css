@@ -35,6 +35,7 @@ body{
     background-repeat: repeat;
     background-size: cover;
     background-size: 0.5rem;
+    min-height: 100vh;
     width: 100%;
 }
 
@@ -166,11 +167,12 @@ main{
 
     font-weight: bolder;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     border: 2px solid black;
     border-radius: 2rem;
     background-color: rgba(255, 255, 255,0.3);
     margin-bottom: 50px;
+    padding: 8px;
 }
 
 .p-box2{
@@ -180,8 +182,8 @@ main{
     border-radius: 2rem;
     background-color: rgba(255, 255, 255,0.5);
     margin-top: 30px;
+    padding: 8px;
 }
-
 
 
 /* ===== Footer ===== */
@@ -193,6 +195,7 @@ main{
     min-height: 15vh;
     justify-content: center;
     border-radius: 10px;
+    margin-top: auto;
 }
 
 /* ===== Socials ===== */
@@ -206,26 +209,35 @@ main{
     margin-bottom: 20px;
 }
 
+.socials a{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /* ===== Favicon ===== */
 
 .fa-twitter{
     font-size: 1.3rem;
-    color: black;
+    padding-right: 20px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
 }
 
 .fa-youtube{
     font-size: 1.3rem;
-    color: black;
+    padding-right: 20px;
+    color: rgb(0, 0, 0);
 }
 
 .fa-instagram{
     font-size: 1.3rem;
-    color: black;
+    padding-right: 20px;
+    color: rgb(0, 0, 0);
 }
 
 .fa-linkedin{
     font-size: 1.3rem;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 .fa-brands:hover{
@@ -246,7 +258,7 @@ main{
 
 
 
-@media (max-width: 50rem) {
+@media (max-width: 735px) {
     #header-container{
         justify-content: space-around;
     }
@@ -259,12 +271,36 @@ main{
     .flexbox1, .flexbox3{
         display: none;
     }
+
+    main{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 13.5rem;
+        margin-bottom: 11.2rem;
+        padding: 10px;
+    }
 }
 
-@media (min-width: 545px) {
-    
-    .menu_responsive{
-        display: none;
+
+@media (max-width: 662px){
+
+    main{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 13.5rem;
+        margin-bottom: 8.8rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 610px){
+
+    main{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 13.5rem;
+        margin-bottom: 7rem;
+        padding: 10px;
     }
 }
 
@@ -281,5 +317,73 @@ main{
         text-transform: uppercase;
         font-size: 12px;
         transition: all 300ms ease;
+    }
+
+    #header-container1{
+        display: flex;
+        max-width: 1800px;
+        height: 100px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img_box{
+        display: flex;
+        height: 200px;
+        justify-content: space-around;
+    }
+
+    main{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10rem;
+        margin-bottom: 10.5rem;
+        padding: 10px;
+    }
+
+}
+
+@media (max-width: 532px){
+
+    main{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10rem;
+        margin-bottom: 8.5rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 426px){
+
+    main{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10rem;
+        margin-bottom: 6.8rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 407px){
+
+    main{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 362px){
+
+    main{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10rem;
+        margin-bottom: 2.5rem;
+        padding: 10px;
     }
 }
