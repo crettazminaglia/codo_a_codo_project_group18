@@ -123,39 +123,6 @@ header{
 
 }
 
-/* ===== Menu responsive ===== */
-
-.menu_responsive{
-    height: 100%;
-}
-
-.menu_responsive li{
-    line-height: 50px;
-    list-style: none;
-    font-size: 20px;
-    font-weight: bolder;
-    color: white;
-}
-
-.menu_responsive li:hover{
-    transform: scale(1.1);
-    transition: .5s;
-    background: lightskyblue;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-}
-
-.menu_responsive > ul{
-    height: 100%;
-    display: flex;
-}
-
-.menu_responsive ul li{
-    height: 100%;
-    list-style: none;
-    position: relative;
-    display: none;
-}
-
 /* ===== Main ===== */
 
 main{
@@ -304,12 +271,15 @@ main{
 
 @media (max-width: 545px) {
 
-        .menu_responsive{
-            display: flex;
-        }
-
-        .menu{
-            display: none;
-        }
-
+    .menu > ul > li > a{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        color: white;
+        align-items: center;
+        padding: 5px;
+        text-transform: uppercase;
+        font-size: 12px;
+        transition: all 300ms ease;
+    }
 }
