@@ -17,7 +17,7 @@ header{
 
 /*Header_superior*/
 .header_superior{
-    max-width: 1200px;
+    max-width: 75rem;
     margin: auto;
     display: flex;
     align-items: center;
@@ -44,7 +44,7 @@ header{
 }
 
 .menu{
-    max-width: 1200px;
+    max-width: 75rem;
     margin: auto;
     height: 100%;
 }
@@ -84,13 +84,13 @@ nav > ul > li > a{
 
 nav > ul > li > a:hover{
     transform: scale(1.1);
-    background: lightskyblue;
+    background: #0074C7;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 
 }
 #selected{
     transform: scale(1.1);
-    background: lightskyblue;
+    background: #0074C7;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 
 }
@@ -116,6 +116,7 @@ nav ul li:hover ul{
     top: 70px;
 }
 
+/*triangulo*/
 nav ul li ul:before{
     content: '';
     width: 0;
@@ -132,7 +133,10 @@ nav ul li ul li a{
     display: block;
     color: white;
     padding: 6px;
-    margin-left: 14px;
+    padding-left: 14px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
     transition: all 300 ease;
 }
 
@@ -140,7 +144,7 @@ nav ul li ul li a:hover{
     background: #0074C7;
     color: #fff;
     transform: scale(1.1);
-    padding-left: 14px;
+    padding-left: 30px;
     font-size: 14px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
@@ -226,11 +230,12 @@ article{
     *display: none;
 }
 
+/*Responsive360*/
+/*@media screen and (max-width: 720px){}*/
 
 
-
-/*Responsive*/
-@media screen and (max-width: 720px){
+/*Responsive720*/
+@media screen and (max-width: 570px){
     .Search input{
         display: none;
     }
@@ -241,7 +246,7 @@ article{
     .logo img{
         width: 100px;
     }
-    /*Ojo anidado!!*/
+    /*Ojo anidado!!
     nav > ul{
         flex-direction: column;
         background-color: #023877;
@@ -253,7 +258,7 @@ article{
         transition: all 300ms ease;
         z-index: 100;
         opacity: 0;
-        visibility: hidden;
+        visibility: hidden;*/
     }
 
     nav > ul > li > a:hover{
@@ -261,7 +266,7 @@ article{
     }
 
     nav ul li ul{
-        left: 60px;
+        left: 90px;
     }
 
     nav ul li ul{
