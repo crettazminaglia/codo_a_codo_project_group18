@@ -13,6 +13,7 @@ header{
     top: 0;
     left: 0;
     background: white;
+    z-index: 100;
 }
 
 /*Header_superior*/
@@ -26,7 +27,7 @@ header{
 
 /*Logo*/
 .logo img{
-    width: 130px;
+    width: 120px;
 }
 
 /*Buscador*/
@@ -149,86 +150,91 @@ nav ul li ul li a:hover{
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
+/* Título */
 #main_title{
     text-align: center;
+    font-size: 2rem;
     font-weight: bold;
     color: black;
 }
-
+/* Iconos RRSS */
 #sub_title{
     text-align: center;
+    padding: 1rem;
 }
+
 
 main{
-    /*background-color: rgb(61, 58, 79);*/
+    *background-color: rgb(61, 58, 79);
     background-color: rgb(233, 232, 236);
     padding: 40px 20px;
-    margin-top: 185px;
-    /*background-clip: url(../vid/backmain.mp4);*/
+    margin-top: 160px;
+    height: 100%;
     background-size: cover;
-    
 }
 
-/*#video-background{
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-    
-}*/
-
-
-article{
-    max-width: 1200px;
-    margin: 10px auto;
-    padding: 30px;
-    background: white;
-    border: 3px black;
-    border-radius: 2rem;
-    color: black;
+.title{
+    text-align: center;
+    font-size: 40px;
+    color: #6a6a6a;
+    margin-top: 100px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
 }
 
-#articles_section{
-    padding: 1rem;
-    display: flex ;
+
+.container{
+    width: 100%;
+    max-width: 75rem;
+    height: 430px;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: auto;
 }
 
-#articles_section article{
-    border: 2px solid steelblue;
+.container .card{
+    width: 330px;
+    height: 395px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
     text-align: center;
-    margin: 2rem;
-    padding: 1rem 1rem;
-    width: 90%;
-    max-width: 24rem;
-    height: 12rem;
-    border-radius: 1rem;
-    overflow: auto;
-    
+    transition: all 0.25s;
 }
 
-.icon_menu{
-    font-size: 26px;
-    color: white;
-    *padding: 2px;
-    cursor: pointer;
-    width: 26px;
-    height: 100%;
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img{
+    width: 330px;
+    height: 220px;
+}
+
+
+.container .card h4{
+    font-weight: 600;
+}
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container .card a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+
+
+/*#check_menu{
     display: none;
-    align-items: center;
-}
-
-#label_check{
-    width: 26px;
-    height: 100%;
-    display: none;
-}
-
-#check_menu{
-    *display: none;
-}
+}*/
 
 /*Responsive360*/
 /*@media screen and (max-width: 720px){}*/
@@ -297,34 +303,33 @@ article{
         height: 300px;
         visibility: visible;
         opacity: 1;
-
     }
+}
 
+
+/* Footer */
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    *color: #fff;
+  }
+
+#footer-content p{
+    position: relative;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: steelblue
 }
   
-
-footer{
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background: white;
+#footer-content {
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
 }
 
-.foot_head{
-    position: relative;
-    font-weight: bold;
-    font-size: 1.2em;
-    color: steelblue
-
-}
-
-.foot{
-    position: relative;
-    font-weight: bold;
-    font-size: 1.2em;
-    color: steelblue
-}
+/* Iconos RRSS */
 
 .fa-brands:hover{
     color: grey;
