@@ -70,7 +70,7 @@ a{
 .menu-item{
     border: 0.5px solid pink;
     background-color: lightblue;
-    font-size: 18px;   /*MEDIA QUERY NECESARIO PARA DEBAJO DE 470*/
+    font-size: 18px;   
 }
 
 .selected{
@@ -160,6 +160,21 @@ footer{
 
 /*RESPONSIVE - INTENTO*/
 
+
+
+@media screen and (max-width: 460px){
+    .menu-item{
+        font-size: 15px;
+    }
+}
+/*
+@media screen and (max-width: 424px){
+    .menu_lista{
+        
+        width: 99%;
+    }
+}
+*/
 @media screen and (max-width: 625px){
     .logo-footer{
         max-width: 75%;
