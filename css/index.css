@@ -198,6 +198,13 @@ main{
     margin-top: auto;
 }
 
+.footer-container{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin: auto;
+}
+
 /* ===== Socials ===== */
 
 .socials{
