@@ -135,6 +135,7 @@ main{
     display: flex;
     justify-content: space-between;
     margin-top: 15rem;
+    margin-bottom: 6.2rem;
     padding: 10px;
 }
 
@@ -196,93 +197,55 @@ main{
 /* ===== Footer ===== */
 
 
-#footer{
-    position: absolute;
-    display: inline-block;
+footer {
+    position: relative;
+    bottom: 0;
     width: 100%;
-    min-height: 120px;
-    background-color: rgba(255, 255, 255, 0.489);
-    justify-content: center;
-    bottom: 0px;
+    background-color: rgba(233, 232, 236, 0.793);
+  }
+
+#footer-content p{
+    position: relative;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: steelblue
+}
+
+#footer-content {
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Iconos RRSS */
+
+.fa-brands:hover{
+    color: grey;
+    font-size: 32px;
 
 }
 
-.footer-container{
-    position: absolute;
-    width: 100%;
-    bottom: 20px;
-    margin: auto;
-}
-
-/* ===== Socials ===== */
-
-.socials{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: end;
-    flex: auto 1 1;
-    margin-bottom: 10px;
-}
-
-.socials a{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* ===== Favicon ===== */
-
-.fa-twitter{
-    font-size: 1.3rem;
-    padding-right: 20px;
-    border-radius: 5px;
-    color: rgb(0, 0, 0);
+.fa-brands{
+    font-size: 30px;
+    color: steelblue;
 }
 
 .fa-youtube{
-    font-size: 1.3rem;
-    padding-right: 20px;
-    color: rgb(0, 0, 0);
+    color: red;
+}
+
+.fa-github{
+    color: black;
+}
+
+.fa-facebook{
+    color: blue;
 }
 
 .fa-instagram{
-    font-size: 1.3rem;
-    padding-right: 20px;
-    color: rgb(0, 0, 0);
+    color: black;
 }
 
-.fa-linkedin{
-    font-size: 1.3rem;
-    color: rgb(0, 0, 0);
-}
-
-.fa-youtube:hover{
-    color: rgb(253, 2, 2);
-    transform: scale(1.8,1.8);
-}
-
-.fa-twitter:hover{
-    color: rgb(2, 117, 249);
-    transform: scale(1.8,1.8);
-}
-
-.fa-instagram:hover{
-    color: rgb(253, 2, 224);
-    transform: scale(1.8,1.8);
-}
-
-.fa-linkedin:hover{
-    color: rgb(15, 2, 253);
-    transform: scale(1.8,1.8);
-}
-/* ===== Foot Text ===== */
-
-.foot-text{
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 1.3rem;
-}
 
 /* ===== Query ===== */
 
@@ -306,7 +269,7 @@ main{
         display: flex;
         justify-content: space-between;
         margin-top: 13.5rem;
-        margin-bottom: 11.2rem;
+        margin-bottom: 4.6rem;
         padding: 10px;
     }
 }
@@ -318,7 +281,7 @@ main{
         display: flex;
         justify-content: space-between;
         margin-top: 13.5rem;
-        margin-bottom: 8.8rem;
+        margin-bottom: 4.6rem;
         padding: 10px;
     }
 }
@@ -329,7 +292,7 @@ main{
         display: flex;
         justify-content: space-between;
         margin-top: 13.5rem;
-        margin-bottom: 7rem;
+        margin-bottom: 4.6rem;
         padding: 10px;
     }
 
@@ -376,7 +339,7 @@ main{
         display: flex;
         justify-content: space-between;
         margin-top: 10rem;
-        margin-bottom: 10.5rem;
+        margin-bottom: 8.1rem;
         padding: 10px;
     }
 
@@ -388,18 +351,18 @@ main{
         display: flex;
         justify-content: space-between;
         margin-top: 10rem;
-        margin-bottom: 8.5rem;
+        margin-bottom: 5.6rem;
         padding: 10px;
     }
 }
 
-@media (max-width: 426px){
+@media (max-width: 458px){
 
     main{
         display: flex;
         justify-content: space-between;
         margin-top: 10rem;
-        margin-bottom: 6.8rem;
+        margin-bottom: 3.2rem;
         padding: 10px;
     }
 }
@@ -410,7 +373,7 @@ main{
         display: flex;
         justify-content: space-between;
         margin-top: 10rem;
-        margin-bottom: 5rem;
+        margin-bottom: 3.2rem;
         padding: 10px;
     }
 }
