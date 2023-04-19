@@ -50,11 +50,12 @@ header{
 /* ===== Logo ===== */
 
 #header-container1{
-    max-width: 1800px;
+    max-width: 1920px;
     height: 150px;
     margin: auto;
+    padding: 0px 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -68,11 +69,17 @@ header{
     margin-top: 30px;
 }
 
+.search input{
+    width: 200px;
+    height: 30px;
+    padding: 10px;
+}
+
 /* ===== Menu ===== */
 
 #header-container2{
     display: flex;
-    max-width: 1880px;
+    max-width: 1920px;
     align-items: center;
     justify-content: center;
     width: 100%;
