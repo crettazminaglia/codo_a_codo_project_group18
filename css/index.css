@@ -197,20 +197,20 @@ main{
 
 
 #footer{
-    display: flex;
-    flex-direction: column;
-    min-height: 100px;
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    min-height: 120px;
+    background-color: rgba(255, 255, 255, 0.489);
     justify-content: center;
-    border-radius: 10px;
-    margin-top: auto;
-    margin-bottom: auto;
+    bottom: 0px;
 
 }
 
 .footer-container{
     position: absolute;
     width: 100%;
-    bottom: 0;
+    bottom: 20px;
     margin: auto;
 }
 
@@ -222,7 +222,7 @@ main{
     justify-content: center;
     align-content: end;
     flex: auto 1 1;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .socials a{
@@ -256,11 +256,25 @@ main{
     color: rgb(0, 0, 0);
 }
 
-.fa-brands:hover{
-    color: gray;
+.fa-youtube:hover{
+    color: rgb(253, 2, 2);
     transform: scale(1.8,1.8);
 }
 
+.fa-twitter:hover{
+    color: rgb(2, 117, 249);
+    transform: scale(1.8,1.8);
+}
+
+.fa-instagram:hover{
+    color: rgb(253, 2, 224);
+    transform: scale(1.8,1.8);
+}
+
+.fa-linkedin:hover{
+    color: rgb(15, 2, 253);
+    transform: scale(1.8,1.8);
+}
 /* ===== Foot Text ===== */
 
 .foot-text{
@@ -317,6 +331,14 @@ main{
         margin-top: 13.5rem;
         margin-bottom: 7rem;
         padding: 10px;
+    }
+
+    .search input{
+        display: none;
+    }
+
+    #header-container1{
+        justify-content: center;
     }
 }
 
