@@ -9,9 +9,7 @@
 :root{
     /* ===== Colores ===== */
     --html-color: linear-gradient(rgb(177, 213, 215) 5%,rgb(135, 175, 208),rgb(177, 213, 215) 90%);
-    /*--header-color: linear-gradient(rgba(70, 130, 180,0.9), rgb(177, 213, 215,0.5));*/
     --nav-a-color: linear-gradient(lightblue,steelblue);
-    /*--footer-color: linear-gradient(rgba(173, 216, 230,0.3),rgba(70, 130, 180,0.9));*/
 }
 
 /* ===== HTML =====*/
@@ -52,11 +50,12 @@ header{
 /* ===== Logo ===== */
 
 #header-container1{
-    max-width: 1800px;
+    max-width: 1920px;
     height: 150px;
     margin: auto;
+    padding: 0px 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -70,11 +69,17 @@ header{
     margin-top: 30px;
 }
 
+.search input{
+    width: 200px;
+    height: 30px;
+    padding: 10px;
+}
+
 /* ===== Menu ===== */
 
 #header-container2{
     display: flex;
-    max-width: 1880px;
+    max-width: 1920px;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -169,20 +174,22 @@ main{
     text-align: center;
     font-size: 2.2rem;
     border: 2px solid black;
-    border-radius: 2rem;
+    border-radius: 1rem;
     background-color: rgba(255, 255, 255,0.3);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     padding: 8px;
 }
 
 .p-box2{
     font-size: 1.5rem;
+    max-height: 10rem;
+    overflow: hidden;
     text-align: center;
     border: 2px solid black;
-    border-radius: 2rem;
+    border-radius: 1rem;
     background-color: rgba(255, 255, 255,0.5);
-    margin-top: 30px;
-    padding: 8px;
+    margin: 20px;
+    padding: 10px 10px 10px 10px;
 }
 
 
@@ -190,18 +197,20 @@ main{
 
 
 #footer{
-    display: flex;
-    flex-direction: column;
-    min-height: 15vh;
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    min-height: 120px;
+    background-color: rgba(255, 255, 255, 0.489);
     justify-content: center;
-    border-radius: 10px;
-    margin-top: auto;
+    bottom: 0px;
+
 }
 
 .footer-container{
     position: absolute;
     width: 100%;
-    bottom: 0;
+    bottom: 20px;
     margin: auto;
 }
 
@@ -213,7 +222,7 @@ main{
     justify-content: center;
     align-content: end;
     flex: auto 1 1;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .socials a{
@@ -247,11 +256,25 @@ main{
     color: rgb(0, 0, 0);
 }
 
-.fa-brands:hover{
-    color: gray;
+.fa-youtube:hover{
+    color: rgb(253, 2, 2);
     transform: scale(1.8,1.8);
 }
 
+.fa-twitter:hover{
+    color: rgb(2, 117, 249);
+    transform: scale(1.8,1.8);
+}
+
+.fa-instagram:hover{
+    color: rgb(253, 2, 224);
+    transform: scale(1.8,1.8);
+}
+
+.fa-linkedin:hover{
+    color: rgb(15, 2, 253);
+    transform: scale(1.8,1.8);
+}
 /* ===== Foot Text ===== */
 
 .foot-text{
@@ -308,6 +331,14 @@ main{
         margin-top: 13.5rem;
         margin-bottom: 7rem;
         padding: 10px;
+    }
+
+    .search input{
+        display: none;
+    }
+
+    #header-container1{
+        justify-content: center;
     }
 }
 
