@@ -7,8 +7,8 @@
 /*CUERPO*/
 
 body{
-    background-image: url(../img/light-blue-vertical-stripes-background.jpg);
-    background-size: cover;
+    background-image: url(../img/background-puntos.png);
+    background-position: center;
     background-repeat: repeat;
 }
 
@@ -120,6 +120,11 @@ h3::before{
 #map{
    /* width: 100%; */
    padding: 0rem 0rem .75rem 0rem; 
+   max-width: 100%;
+}
+
+.stios-codev{
+    max-width: 100%;
 }
 
 .stios-codev > p{
