@@ -186,7 +186,7 @@ main{
 .container{
     width: 100%;
     max-width: 75rem;
-    height: 430px;
+    *height: 430px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
