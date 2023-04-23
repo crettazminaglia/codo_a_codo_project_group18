@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
 
-    <!--Stylesheet-->
+    <!--CSS-->
     <link rel="stylesheet" href="./css/contact.css">
 
     <!--Favicon-->
@@ -27,100 +27,113 @@
     <!--Iconos/Fontawesome-->
     <script src="https://kit.fontawesome.com/510cf6bb16.js" crossorigin="anonymous"></script>
 
-    
+
 </head>
-
 <body>
-
-    <header id="header">
-        <section id="flex-container1">
-            <section id="logo" class="flex-item">
-                <img src="./img/logo_sin_fondo_reducido.png" alt="logo-sin-fondo" class="logo-header">
+    <header>
+        <section class="header_superior">
+            <section class="logo">
+                <img class="animate__animated animate__bounce" src="./img/logo_sin_fondo.png" alt="Logo">
             </section>
-
-            <section id="flex-container2" class="menu">
-                <nav>
-                    <ul class="menu_lista flex-item">
-                        <li class="menu-item"> <a href="index.html">Inicio</a> </li>
-                        <li class="menu-item"> <a href="services.html">Servicios</a> </li>
-                        <li class="menu-item"> <a href="about.html">Nosotros</a> </li>
-                        <li class="menu-item"> <a href="contact.html" class="selected">Contacto</a> </li>
-                    </ul>
-                </nav>
+            <section class="Search">
+                <input type="Search" placeholder="que buscamos?">
             </section>
         </section>
-    </header>
-    
-    <main>
-        <section id="titulo">
-            <h1>
-                <span class="titulo1">
-                    Conexión CoDEVConnect
-                </span>
-            </h1>
-        </section>
 
-        
-        <section id="flex-container3">
-            <section id="form">
-                <h2 id="subtitulo">Contactanos</h2>
-
-                <!-- Acá va el formulario de contacto-->
-                <form action="# va un link" method="get">
-                    <fieldset>
-                        <legend>Contanos de vos</legend>
-
-                        <label for="Empresa">Nombre de la empresa/emprendimiento:</label>
-                        <input type="text" name="Empresa" id="Empresa" placeholder="Empresa/Emprendimiento">
+        <section class="container_menu">
+            <nav>
+                <ul>
                     
-                        <label for="Name" required>Nombre</label>
-                        <input type="text" id="Name" name="Name" placeholder="Nombre">
+                    <li><a href="./index.html"><i class="fa-solid fa-house fa-lg"></i></a></li>
+                    <li><a href="#">Servicios</a></li>
+                    
+                    <ul>
+                        <li><a href="#">Diseño Web </a></li>
+                        <li><a href="#">Formación</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Ciberseguridad</a></li>
+                    </ul>
 
-                        <label for="lastname">Apellido</label>
-                        <input type="text" id="lastname" name="lastname" placeholder="Apellido">
+                    <li><a href="./about.html">Nosotros</a></li>
+                    <li><a href="./contact.html">Contacto</a></li>
+                </ul>
+            </nav>
 
-                        <label for="Email" required>Email</label>
-                        <input type="email" id="Email" name="Email" placeholder="E-mail nombre@gmail.com">
+    </header>
 
-                        <label for="Servicio" required>Servicio requerido:</label>
+    <main>
+        
+        <h1> 
+            <span class="titulo1">Conexión<br>CoDEVConnect</span>
+        </h1>
+
+        <section id="flex-container0">
+
+            <h2 id="subtitulo" class="flex-item0">Contacto</h2>
+
+            <section class="flex-item0">
+                <form action="#link" method="get">
+                    <fieldset id="flex-container1">
+                        <legend class="flex-item1">Datos personales</legend>
+
+                        <label for="businessname" class="flex-item1">Nombre del emprendimiento</label>
+                        <input type="text" id="businessname" name="businessname" placeholder="Nombre del emprendimiento" class="flex-item1">
+
+                        <label for="name" class="flex-item1">Nombre</label>
+                        <input type="text" id="name" name="name" placeholder="Nombre" class="flex-item1">
+
+                        <label for="lastname" class="flex-item1">Apellido</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Apellido" class="flex-item1">
+
+                        <label for="email" class="flex-item1">Email</label>
+                        <input type="email" id="email" name="email" placeholder="maria@gmail.com" class="flex-item1">
+
+                        <label for="phone" class="flex-item1">Teléfono</label>
+                        <input type="number" id="phone" name="phone" placeholder="+5491155446677" class="flex-item1">
+                    
+                        <label for="Servicio" class="flex-item1" required>Servicio requerido:</label>
                             <input type="checkbox" name="tipodeservicio" id="tipodeservicio" value="Creación de Sitio Web">Creación de Sitio Web
                             <input type="checkbox" name="tipodeservicio" id="tipodeservicio" value="Desarrollo de logo">Desarrollo de logo
                             <input type="checkbox" name="tipodeservicio" id="tipodeservicio" value="Mejora de Sitio Web">Mejora de Sitio Web
 
                         <button type="submit">Enviar</button>
                         <button type="reset">Borrar todo</button>
+
                     </fieldset>
                 </form>
             </section>
             
+            <h2 id="subtitulo" class="flex-item0">Dónde nos encontrás</h2>
 
-            <section id="Ubicación">
-                <h2 id="subtitulo">Donde nos encontrás</h2>
-                <nav>
-                    <!--Ubicaciones de CoDEVConnect-->
+            <section class="flex-item0">
+                <section id="flex-container2">        
+                    <section class="flex-item2 stios-codev">
+                        <h3>En CABA - Argentina</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7755.011618296259!2d-58.38642632531704!3d-34.59890096091772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac87d0daf3f%3A0xb72626dc5b628786!2sCerrito%20720%2C%20C1010%20San%20Nicolas%2C%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses-419!2suk!4v1679936654604!5m2!1ses-419!2suk" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
+                        <p>Cerrito 720, Ciudad Autónoma de Buenos Aires.</p>
+                        <p>Teléfono: (+54) 47737769</p>
+                        <p>Email: buenosaires@codevconnect.com.ar</p>
+                    </section>
 
-                    <h3>En CABA - Argentina</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7755.011618296259!2d-58.38642632531704!3d-34.59890096091772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac87d0daf3f%3A0xb72626dc5b628786!2sCerrito%20720%2C%20C1010%20San%20Nicolas%2C%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses-419!2suk!4v1679936654604!5m2!1ses-419!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
-                    <p>Cerrito 720, Ciudad Autónoma de Buenos Aires.</p>
-                    <p>Teléfono: (+54) 47737769</p>
-                    <p>Email: buenosaires@codevconnect.com.ar</p>
-
-                    <h3>En Madrid - España</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10824.013832610803!2d-3.6876096329816064!3d40.422448688377976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228997106b1b1%3A0xd4132c0d4e507cf8!2sAntonina%20Monasterio%20Mart%C3%ADnez!5e0!3m2!1ses-419!2suk!4v1679936854056!5m2!1ses-419!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
-                    <p>C. de Alcalá, Madrid.</p>
-                    <p>Teléfono: (+34) 624784595</p>
-                    <p>Email: madrid@codevconnect.com.ar</p>
-
-                    <h3>En Cardiff - Gales (Reino Unido)</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.788206404016!2d-3.184390948694487!3d51.48040177953071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e1cafd43bc045%3A0x9da5bb0d30d2a4bf!2s5%20Westgate%20St%2C%20Cardiff%20CF10%201DD!5e0!3m2!1ses-419!2suk!4v1679937560044!5m2!1ses-419!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
-                    <p>5 Westgate St, Cardiff.</p>
-                    <p>Teléfono: (+44) 02920552678</p>
-                    <p>Email: cardiff@codevconnect.com.ar</p>
-
-                </nav>
+                    <section class="flex-item2 stios-codev">
+                        <h3>En Madrid - España</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10824.013832610803!2d-3.6876096329816064!3d40.422448688377976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228997106b1b1%3A0xd4132c0d4e507cf8!2sAntonina%20Monasterio%20Mart%C3%ADnez!5e0!3m2!1ses-419!2suk!4v1679936854056!5m2!1ses-419!2suk" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
+                        <p>C. de Alcalá, Madrid.</p>
+                        <p>Teléfono: (+34) 624784595</p>
+                        <p>Email: madrid@codevconnect.com.ar</p>
+                    </section>
+                    
+                    <section class="flex-item2 stios-codev">
+                        <h3>En Cardiff - Gales (Reino Unido)</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.788206404016!2d-3.184390948694487!3d51.48040177953071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e1cafd43bc045%3A0x9da5bb0d30d2a4bf!2s5%20Westgate%20St%2C%20Cardiff%20CF10%201DD!5e0!3m2!1ses-419!2suk!4v1679937560044!5m2!1ses-419!2suk" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
+                        <p>5 Westgate St, Cardiff.</p>
+                        <p>Teléfono: (+44) 02920552678</p>
+                        <p>Email: cardiff@codevconnect.com.ar</p>
+                    </section>
+                </section>
             </section>
-        </section>
 
+        </section>
     </main>
 
     <footer id="footer">
@@ -131,20 +144,20 @@
             </section>
 
             <nav class="social-icons flex-item-footer">
-                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.github.com/" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
              </nav>
         </section>
         
             <section id="copy-right">
-                <p>&copy Copy Right CoDEVConnect 2023</p>
+                <p>&copy Copyright CoDEVConnect - 2023</p>
             </section>
 
         
     </footer>
+
 </body>
 </html>
