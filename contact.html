@@ -27,6 +27,9 @@
     <!--Iconos/Fontawesome-->
     <script src="https://kit.fontawesome.com/510cf6bb16.js" crossorigin="anonymous"></script>
 
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
 
 </head>
 <body>
@@ -69,41 +72,63 @@
 
         <section id="flex-container0">
 
-            <h2 id="subtitulo" class="flex-item0">Contacto</h2>
+            <h2 id="subtitulo" class="flex-item0 h2">Contacto</h2>
 
             <section class="flex-item0">
                 <form action="#link" method="get">
                     <fieldset id="flex-container1">
-                        <legend class="flex-item1">Datos personales</legend>
+                        <div class="container-fluid">
+                            <legend>Datos personales</legend>
 
-                        <label for="businessname" class="flex-item1">Nombre del emprendimiento</label>
-                        <input type="text" id="businessname" name="businessname" placeholder="Nombre del emprendimiento" class="flex-item1">
+                            <div class="mb-3">
+                                <label for="businessname" class="form-label">Nombre del emprendimiento</label>
+                                <input type="text" class="form-control" id="businessname" name="businessname" placeholder="Nombre del emprendimiento" aria-describedby="emailHelp">
+                            </div>
 
-                        <label for="name" class="flex-item1">Nombre</label>
-                        <input type="text" id="name" name="name" placeholder="Nombre" class="flex-item1">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Nombre">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="lastname" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Apellido">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="email" class="form-label">E-mail</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="maria@gmail.com" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">Nunca vamos a compartir tu e-mail.</div>
+                            </div>
 
-                        <label for="lastname" class="flex-item1">Apellido</label>
-                        <input type="text" id="lastname" name="lastname" placeholder="Apellido" class="flex-item1">
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Teléfono</label>
+                                <input type="number" class="form-control" id="phone" name="phone">
+                            </div>
 
-                        <label for="email" class="flex-item1">Email</label>
-                        <input type="email" id="email" name="email" placeholder="maria@gmail.com" class="flex-item1">
+                            <label for="servicioRequerido" class="form-label">Servicio requerido:</label>
 
-                        <label for="phone" class="flex-item1">Teléfono</label>
-                        <input type="number" id="phone" name="phone" placeholder="+5491155446677" class="flex-item1">
-                    
-                        <label for="Servicio" class="flex-item1" required>Servicio requerido:</label>
-                            <input type="checkbox" name="tipodeservicio" id="tipodeservicio" value="Creación de Sitio Web">Creación de Sitio Web
-                            <input type="checkbox" name="tipodeservicio" id="tipodeservicio" value="Desarrollo de logo">Desarrollo de logo
-                            <input type="checkbox" name="tipodeservicio" id="tipodeservicio" value="Mejora de Sitio Web">Mejora de Sitio Web
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="tipodeservicio" value="Creación de Sitio Web">
+                                <label class="form-check-label" for="creacionDeSitioWeb">Creación de Sitio Web</label>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="tipodeservicio" value="Desarrollo de logo">
+                                <label class="form-check-label" for="DesarrolloDeLogo">Desarrollo de logo</label>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="tipodeservicio" value="Mejora de Sitio Web">
+                                <label class="form-check-label" for="mejoraDeSitioWeb">Mejora de Sitio Web</label>
+                            </div>
 
-                        <button type="submit">Enviar</button>
-                        <button type="reset">Borrar todo</button>
-
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Borrar todo</button>
+                        </div>
                     </fieldset>
                 </form>
             </section>
             
-            <h2 id="subtitulo" class="flex-item0">Dónde nos encontrás</h2>
+            <h2 id="subtitulo" class="flex-item0 h2">Dónde nos encontrás</h2>
 
             <section class="flex-item0">
                 <section id="flex-container2">        
@@ -161,3 +186,6 @@
 
 </body>
 </html>
+
+<!--Bootstrap Script-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
