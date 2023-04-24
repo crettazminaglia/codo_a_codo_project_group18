@@ -10,6 +10,7 @@ body{
     background-image: url(../img/background-puntos.png);
     background-position: center;
     background-repeat: repeat;
+    background-size: 100%;
 }
 
 /*TITULO PRINCIPAL*/
