@@ -4,7 +4,155 @@
     font-family: 'Merriweather', serif;
 }
 
-/*CUERPO*/
+/* HEADER */
+
+/* Barra del menu 
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 100;
+}
+*/
+/*Header_superior
+.header_superior{
+    max-width: 75rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+*/
+/*Logo
+.logo img{
+    width: 120px;
+}
+*/
+/*Buscador
+.Search input{
+    width: 300px;
+    padding: 5px;
+}
+*/
+/* Barra del menu 
+.container_menu{
+    width: 100%;
+    height: 70px;
+    background-color: steelblue;
+    padding: 0px 20px;
+}
+
+.menu{
+    max-width: 75rem;
+    margin: auto;
+    height: 100%;
+}
+
+nav{
+    height: 100%;
+}
+
+nav > ul{
+    height: 100%;
+    display: flex;
+}
+
+nav ul li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+
+nav > ul > li:first-child > a{
+    padding: 20px 35px;
+}
+
+
+nav > ul > li > a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 14px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 300ms ease;
+
+}
+
+nav > ul > li > a:hover{
+    transform: scale(1.1);
+    background: #0074C7;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+
+}
+#selected{
+    transform: scale(1.1);
+    background: #0074C7;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+
+}
+*/
+/*sub-menu
+nav ul li ul{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background: steelblue;
+    position: absolute;
+    top: 90px;
+    padding: 14px 0px;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    z-index: 10;
+    transition: all 300ms ease;
+}
+
+nav ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+}
+*/
+/*triangulo
+nav ul li ul:before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid white;
+    position: absolute;
+    top: -12px;
+    left: 20px;
+}
+
+nav ul li ul li a{
+    display: block;
+    color: white;
+    padding: 6px;
+    padding-left: 14px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 300 ease;
+}
+
+nav ul li ul li a:hover{
+    background: #0074C7;
+    color: #fff;
+    transform: scale(1.1);
+    padding-left: 30px;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+*/
+
+/* CUERPO */
 
 body{
     background-image: url(../img/background-puntos.png);
@@ -17,9 +165,9 @@ body{
 
 .titulo1{
     /* border: 5px solid yellow;*/
-    padding: 5rem 10%;
+    padding: 4rem 10%;
     color: #fff;
-    font-size: 80px;
+    font-size: 50px;
 
     display: flex;
     justify-content: center;
@@ -48,7 +196,7 @@ body{
 
 #flex-container1{
     border: 2px solid red;
-    margin: 3rem 0rem;
+    margin: .5rem 0rem;
     display: flex;
     flex-direction: column;
     /*flex-wrap: wrap;*/
@@ -56,12 +204,19 @@ body{
     align-items: center;
 }
 
+.container-fluid{
+    border: 3px solid fuchsia;
+    max-width: 60%;
+}
+
+/*
 .flex-item1{
     border: 1px solid #000;
     width: 20rem;
     height: 2rem;
     margin: .5rem 0rem;
 }
+*/ 
 
 button{
     color: rgb(252, 255, 254) ;
@@ -91,9 +246,9 @@ button:hover{
 
 .flex-item2{
     border: 1px solid #000;
-    /* width: 10rem;*/
+    width: 60%;
     height: auto; 
-    margin: 1rem 0rem;
+    margin: .5rem 0rem;
 }
 
 #subtitulo{
@@ -103,14 +258,13 @@ button:hover{
     border-radius: 3px;
     background-color: rgba(255, 255, 255, 0.3);
     text-align: left; /*funciona solo para los h2*/
-    font-size: 35px;
+    font-size: 22px;
 }
 
 h3{
     margin: .5rem;
     padding: .75rem;
-    font-size: 25px;
-    font-weight: 200;
+    font-size: 17px;
     /* text-decoration: underline; NO QUEDA MUY LINDO*/
 }
 
@@ -119,9 +273,9 @@ h3::before{
 }
 
 #map{
-   /* width: 100%; */
-   padding: 0rem 0rem .75rem 0rem; 
-   max-width: 100%;
+    width: 100%;
+    padding: 0rem 0rem .5rem 0rem; 
+    
 }
 
 .stios-codev{
@@ -129,9 +283,10 @@ h3::before{
 }
 
 .stios-codev > p{
-    font-size: 20px;
+    font-size: 14px;
     border: 2px yellowgreen solid;
-    padding: .2rem 2rem;
+    margin: .3rem;
+    padding: .2rem 1rem;
 }
 
 .stios-codev > p::before{
@@ -167,3 +322,92 @@ footer{
     text-align: center;
     border: dashed 1px black;
 }
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1200px){
+    .flex-item0{
+        border: 3px solid green;
+        width: 75%;
+        align-self: center;
+    }
+    .container-fluid{
+        border: 3px solid fuchsia;
+        max-width: 68%;
+    }
+    .flex-item2{
+        border: 1px solid #000;
+        width: 68%;
+        height: auto; 
+        margin: .5rem 0rem;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .flex-item0{
+        border: 3px solid green;
+        width: 85%;
+        align-self: center;
+    }
+    .container-fluid{
+        border: 3px solid fuchsia;
+        max-width: 75%;
+    }
+    .flex-item2{
+        border: 1px solid #000;
+        width: 75%;
+        height: auto; 
+        margin: .5rem 0rem;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .container-fluid{
+        border: 3px solid fuchsia;
+        max-width: 85%;
+    }
+    .flex-item2{
+        border: 1px solid #000;
+        width: 85%;
+        height: auto; 
+        margin: .5rem 0rem;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .container-fluid{
+        border: 3px solid fuchsia;
+        max-width: 100%;
+    }
+    .flex-item2{
+        border: 1px solid #000;
+        width: 100%;
+        height: auto; 
+        margin: .5rem 0rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .flex-item0{
+        border: 3px solid green;
+        width: 95%;
+        align-self: center;
+    }
+
+    #subtitulo{
+        margin: .25rem;
+        padding: .5rem;
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    .titulo1{
+        /* border: 5px solid yellow;*/
+        padding: 2rem 5%;
+        color: #fff;
+        font-size: 40px;
+    }
+}
+
