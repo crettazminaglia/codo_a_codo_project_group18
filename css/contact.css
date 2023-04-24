@@ -167,7 +167,8 @@ body{
     /* border: 5px solid yellow;*/
     padding: 4rem 10%;
     color: #fff;
-    font-size: 50px;
+    font-size: 55px;
+    font-weight: bolder;
 
     display: flex;
     justify-content: center;
@@ -178,7 +179,7 @@ body{
 }
 
 #flex-container0{
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
     margin: .25rem 0rem;
     display: flex;
     flex-direction: column;
@@ -187,7 +188,7 @@ body{
 }
 
 .flex-item0{
-    border: 3px solid green;
+    /* border: 3px solid green; */
     width: 75%;
     align-self: center;
 }
@@ -195,28 +196,34 @@ body{
 /* FORMULARIO*/
 
 #flex-container1{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin: .5rem 0rem;
-    display: flex;
-    flex-direction: column;
-    /*flex-wrap: wrap;*/
     justify-content: center;
     align-items: center;
 }
 
 .container-fluid{
-    border: 3px solid fuchsia;
+    /* border: 3px solid fuchsia; */
     max-width: 60%;
+    padding: .5rem;
+    margin-bottom: 1.5rem;
+    background-color: rgba(230, 255, 255, 0.3);
 }
 
-/*
-.flex-item1{
-    border: 1px solid #000;
-    width: 20rem;
-    height: 2rem;
-    margin: .5rem 0rem;
+
+.legend {
+    font-size: 20px;
+    margin-bottom: .75rem;
+    font-weight: bold;
+    text-decoration: underline;
+   }
+   
+
+label {
+    font-size: 16px;
+    font-weight: bold;
 }
-*/ 
+
 
 button{
     color: rgb(252, 255, 254) ;
@@ -235,9 +242,9 @@ button:hover{
 /*UBICACION*/
 
 #flex-container2{
-    border: 2px solid blue;
-    height: auto;
-    margin: 1rem 0rem;
+    /* border: 2px solid blue;
+    height: auto; */
+    margin: .5rem 0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -245,27 +252,34 @@ button:hover{
 }
 
 .flex-item2{
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     width: 60%;
     height: auto; 
-    margin: .5rem 0rem;
+    margin: .5rem 0rem 1.5rem 0rem;
+    background-color: rgba(230, 255, 255, 0.3);
 }
 
 #subtitulo{
     margin: .5rem;
-    padding: 1rem;
+    padding: 1rem 3rem;
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 3px;
-    background-color: rgba(255, 255, 255, 0.3);
-    text-align: left; /*funciona solo para los h2*/
-    font-size: 22px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: left; 
+    font-size: 35px;
+    font-weight: bolder;
 }
 
-h3{
+
+.stios-codev{
+    max-width: 100%;
+}
+
+.lugar{
     margin: .5rem;
-    padding: .75rem;
-    font-size: 17px;
-    /* text-decoration: underline; NO QUEDA MUY LINDO*/
+    padding: .5rem;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 h3::before{
@@ -274,18 +288,12 @@ h3::before{
 
 #map{
     width: 100%;
-    padding: 0rem 0rem .5rem 0rem; 
-    
-}
-
-.stios-codev{
-    max-width: 100%;
+    padding: 0rem 0rem .25rem 0rem; 
 }
 
 .stios-codev > p{
     font-size: 14px;
-    border: 2px yellowgreen solid;
-    margin: .3rem;
+    margin: .1rem;
     padding: .2rem 1rem;
 }
 
@@ -320,76 +328,68 @@ footer{
 
 #copy-right{
     text-align: center;
-    border: dashed 1px black;
 }
 
 /* RESPONSIVE */
 
 @media screen and (max-width: 1200px){
     .flex-item0{
-        border: 3px solid green;
         width: 75%;
-        align-self: center;
     }
+
     .container-fluid{
-        border: 3px solid fuchsia;
         max-width: 68%;
     }
+
     .flex-item2{
-        border: 1px solid #000;
         width: 68%;
-        height: auto; 
         margin: .5rem 0rem;
     }
 }
 
 @media screen and (max-width: 1000px){
     .flex-item0{
-        border: 3px solid green;
         width: 85%;
-        align-self: center;
     }
+
     .container-fluid{
-        border: 3px solid fuchsia;
         max-width: 75%;
     }
+
     .flex-item2{
-        border: 1px solid #000;
         width: 75%;
-        height: auto; 
         margin: .5rem 0rem;
     }
 }
 
 @media screen and (max-width: 850px){
     .container-fluid{
-        border: 3px solid fuchsia;
         max-width: 85%;
     }
+
     .flex-item2{
-        border: 1px solid #000;
         width: 85%;
-        height: auto; 
         margin: .5rem 0rem;
     }
 }
 
 @media screen and (max-width: 750px){
     .container-fluid{
-        border: 3px solid fuchsia;
         max-width: 100%;
     }
+
     .flex-item2{
-        border: 1px solid #000;
         width: 100%;
-        height: auto; 
         margin: .5rem 0rem;
+    }
+
+    #subtitulo{
+        padding: 1rem;
     }
 }
 
 @media screen and (max-width: 480px){
     .flex-item0{
-        border: 3px solid green;
         width: 95%;
         align-self: center;
     }
@@ -397,16 +397,13 @@ footer{
     #subtitulo{
         margin: .25rem;
         padding: .5rem;
-        font-size: 20px;
+        font-size: 28px;
     }
-    
 }
 
 @media screen and (max-width: 400px) {
     .titulo1{
-        /* border: 5px solid yellow;*/
         padding: 2rem 5%;
-        color: #fff;
         font-size: 40px;
     }
 }
