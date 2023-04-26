@@ -27,6 +27,9 @@
     <!--Iconos/Fontawesome-->
     <script src="https://kit.fontawesome.com/510cf6bb16.js" crossorigin="anonymous"></script>
 
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
 
 </head>
 <body>
@@ -69,46 +72,68 @@
 
         <section id="flex-container0">
 
-            <h2 id="subtitulo" class="flex-item0">Contacto</h2>
+            <h2 id="subtitulo" class="flex-item0 h2">Contacto</h2>
 
             <section class="flex-item0">
                 <form action="#link" method="get">
                     <fieldset id="flex-container1">
-                        <legend class="flex-item1">Datos personales</legend>
+                        <div class="container-fluid">
+                            <legend class="legend">Datos personales</legend>
 
-                        <label for="businessname" class="flex-item1">Nombre del emprendimiento</label>
-                        <input type="text" id="businessname" name="businessname" placeholder="Nombre del emprendimiento" class="flex-item1">
+                            <div class="mb-3">
+                                <label for="businessname" class="form-label">Nombre del emprendimiento</label>
+                                <input type="text" class="form-control" id="businessname" name="businessname" placeholder="Nombre del emprendimiento" aria-describedby="emailHelp">
+                            </div>
 
-                        <label for="name" class="flex-item1">Nombre</label>
-                        <input type="text" id="name" name="name" placeholder="Nombre" class="flex-item1">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Nombre">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="lastname" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Apellido">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="email" class="form-label">E-mail</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="maria@gmail.com" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">Nunca vamos a compartir tu e-mail.</div>
+                            </div>
 
-                        <label for="lastname" class="flex-item1">Apellido</label>
-                        <input type="text" id="lastname" name="lastname" placeholder="Apellido" class="flex-item1">
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Teléfono</label>
+                                <input type="number" class="form-control" id="phone" name="phone">
+                            </div>
 
-                        <label for="email" class="flex-item1">Email</label>
-                        <input type="email" id="email" name="email" placeholder="maria@gmail.com" class="flex-item1">
+                            <label for="servicioRequerido" class="form-label">Servicio requerido:</label>
 
-                        <label for="phone" class="flex-item1">Teléfono</label>
-                        <input type="number" id="phone" name="phone" placeholder="+5491155446677" class="flex-item1">
-                    
-                        <label for="Servicio" class="flex-item1" required>Servicio requerido:</label>
-                            <input type="checkbox" name="tipodeservicio" id="tipodeservicio" value="Creación de Sitio Web">Creación de Sitio Web
-                            <input type="checkbox" name="tipodeservicio" id="tipodeservicio" value="Desarrollo de logo">Desarrollo de logo
-                            <input type="checkbox" name="tipodeservicio" id="tipodeservicio" value="Mejora de Sitio Web">Mejora de Sitio Web
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="tipodeservicio" value="Creación de Sitio Web">
+                                <label class="form-check-label" for="creacionDeSitioWeb">Creación de Sitio Web</label>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="tipodeservicio" value="Desarrollo de logo">
+                                <label class="form-check-label" for="DesarrolloDeLogo">Desarrollo de logo</label>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="tipodeservicio" value="Mejora de Sitio Web">
+                                <label class="form-check-label" for="mejoraDeSitioWeb">Mejora de Sitio Web</label>
+                            </div>
 
-                        <button type="submit">Enviar</button>
-                        <button type="reset">Borrar todo</button>
-
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Borrar todo</button>
+                        </div>
                     </fieldset>
                 </form>
             </section>
             
-            <h2 id="subtitulo" class="flex-item0">Dónde nos encontrás</h2>
+            <h2 id="subtitulo" class="flex-item0 h2">Dónde nos encontrás</h2>
 
             <section class="flex-item0">
                 <section id="flex-container2">        
                     <section class="flex-item2 stios-codev">
-                        <h3>En CABA - Argentina</h3>
+                        <h3 class="lugar">En CABA - Argentina</h3>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7755.011618296259!2d-58.38642632531704!3d-34.59890096091772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac87d0daf3f%3A0xb72626dc5b628786!2sCerrito%20720%2C%20C1010%20San%20Nicolas%2C%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses-419!2suk!4v1679936654604!5m2!1ses-419!2suk" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
                         <p>Cerrito 720, Ciudad Autónoma de Buenos Aires.</p>
                         <p>Teléfono: (+54) 47737769</p>
@@ -116,7 +141,7 @@
                     </section>
 
                     <section class="flex-item2 stios-codev">
-                        <h3>En Madrid - España</h3>
+                        <h3 class="lugar">En Madrid - España</h3>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10824.013832610803!2d-3.6876096329816064!3d40.422448688377976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228997106b1b1%3A0xd4132c0d4e507cf8!2sAntonina%20Monasterio%20Mart%C3%ADnez!5e0!3m2!1ses-419!2suk!4v1679936854056!5m2!1ses-419!2suk" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
                         <p>C. de Alcalá, Madrid.</p>
                         <p>Teléfono: (+34) 624784595</p>
@@ -124,7 +149,7 @@
                     </section>
                     
                     <section class="flex-item2 stios-codev">
-                        <h3>En Cardiff - Gales (Reino Unido)</h3>
+                        <h3 class="lugar">En Cardiff - Gales (Reino Unido)</h3>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.788206404016!2d-3.184390948694487!3d51.48040177953071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e1cafd43bc045%3A0x9da5bb0d30d2a4bf!2s5%20Westgate%20St%2C%20Cardiff%20CF10%201DD!5e0!3m2!1ses-419!2suk!4v1679937560044!5m2!1ses-419!2suk" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
                         <p>5 Westgate St, Cardiff.</p>
                         <p>Teléfono: (+44) 02920552678</p>
@@ -156,8 +181,10 @@
                 <p>&copy Copyright CoDEVConnect - 2023</p>
             </section>
 
-        
     </footer>
 
 </body>
 </html>
+
+<!--Bootstrap Script-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
