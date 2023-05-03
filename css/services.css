@@ -165,14 +165,21 @@ nav ul li ul li a:hover{
 
 
 main{
-    *background-color: rgb(61, 58, 79);
-    background-color: rgb(233, 232, 236);
+    /*background-color: rgb(61, 58, 79);
+    background-color: rgb(233, 232, 236);*/
     padding: 40px 20px;
     margin-top: 160px;
     height: 100%;
-    background-image: url(../img/background-puntos.png);
+    /*background-image: url(../img/background-puntos.png);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
+}
+
+body{
+    background-image: url(../img/background-puntos.png);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 100%;
 }
 
 .title{
