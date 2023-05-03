@@ -6,6 +6,153 @@
 
 /* HEADER */
 
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 3px orange solid; */
+}
+
+.header_superior{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .25rem;
+    /*border: 2px solid pink;*/
+}
+
+.logo{
+    size: 100%;
+    margin: 0rem 1rem;
+}
+
+.Search{
+    padding: 5px;
+    align-self: right;
+}
+
+.container_menu{
+    width: 100%;
+    height: 75px;
+    background-color: steelblue;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu{
+    width: 90%;
+    height: 100%;
+    /*margin-right: 2%;
+    border: solid 2px green; */
+    justify-content: space-between;
+}
+
+nav{
+    height: 75rem;
+} 
+
+ul, li{
+    list-style: none;
+}
+
+nav > ul{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    padding: 0;
+    /*border: 1px solid red;*/
+    height: 75rem%;
+}
+
+nav > ul > li{
+    height: 73px;
+    width: 120px;
+    align-items: center;
+}
+
+nav > ul > li > a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    padding: 20px 14px;
+    transition: all 300ms ease;
+    /*border: black solid 1px;*/
+}
+
+nav > ul > li:first-child > a{
+    padding: 20px 35px;
+}
+
+nav > ul > li > a:hover{
+    transform: scale(1.1);
+    background: #0074C7;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+nav > ul > li > ul{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background: steelblue;
+    position: absolute;
+    top: 90px;
+    padding: 14px 0px;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    z-index: 10;
+    transition: all 300ms ease;
+}
+
+nav > ul > li:hover > ul{
+    visibility: visible;
+    opacity: 1;
+    top: 170px;
+}
+
+/*triangulo*/
+nav > ul > li > ul:before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid white;
+    position: absolute;
+    top: -12px;
+    left: 20px;
+}
+
+nav > ul > li > ul > li > a{
+    display: block;
+    color: white;
+    padding: 6px 6px 6px 14px;
+    margin-top: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 300 ease;
+}
+
+nav > ul > li > ul > li > a:hover{
+    background: #0074C7;
+    color: #fff;
+    transform: scale(1.1);
+    padding-left: 30px;
+    font-size: 13px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
 
 /* CUERPO */
 
@@ -14,6 +161,7 @@ body{
     background-position: center;
     background-repeat: repeat;
     background-size: 100%;
+    width: 100%;
 }
 
 /*TITULO PRINCIPAL*/
@@ -229,6 +377,10 @@ footer{
 }
 
 @media screen and (max-width: 750px){
+    .header_superior{
+        width: 98%;
+    }
+
     .container-fluid{
         max-width: 100%;
     }
@@ -243,7 +395,82 @@ footer{
     }
 }
 
+
+@media screen and (max-width: 600px){
+    .menu{
+        width: 100%;
+        margin-right: .5%;
+    }
+    
+    nav > ul > li > a{
+        height: 75%;
+        width: 75%;
+       /* padding: 20px; */
+        font-size: 14px;
+    }
+
+   /* nav > ul > li:first-child > a{
+        padding: 25px;
+    } */
+
+    nav > ul > li > ul > li > a{
+        font-size: 10px;
+    }
+    
+    nav > ul > li > ul > li > a:hover{
+        font-size: 11px;
+    }
+}
+
 @media screen and (max-width: 480px){
+    .header_superior{
+        width: 100%;
+    }
+
+    #item_header_superior{
+        width: 50%;
+    }
+    
+    img{
+        height: 85%;
+        width: 85%;
+    }
+
+    .logo{
+        margin: 0rem;
+    }
+    
+    .Search{
+        width: 300px;
+        font-size: 12px;
+        padding: .5px;
+    }
+
+    .container_menu{
+        padding: 0px;
+    }
+
+    nav > ul > li > a{
+        height: 75%;
+        width: 75%;
+        font-size: 12px;
+    }
+
+    nav > ul > li:first-child{
+        padding: 0px;
+    }
+
+    nav > ul > li > ul{
+        width: 150px;
+        padding: 0px;
+    }
+
+     /*triangulo*/
+     nav > ul > li > ul:before{
+        top: -18px;
+        left: 20px;
+    }
+
     .flex-item0{
         width: 95%;
         align-self: center;
@@ -257,6 +484,13 @@ footer{
 }
 
 @media screen and (max-width: 400px) {
+    
+     /*triangulo*/
+     nav > ul > li > ul:before{
+        top: -12px;
+        left: 20px;
+    }
+
     .titulo1{
         padding: 2rem 5%;
         font-size: 40px;
