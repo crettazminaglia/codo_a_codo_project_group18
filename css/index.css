@@ -19,7 +19,7 @@ html{
     max-height: 108rem;
     max-width: 120rem;
     height: 100%;
-    background-image: url(../img/Fondoprueba.jpg);
+    background-image: url(../img/background-puntos.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -145,10 +145,17 @@ main{
     display: flex;
 }
 
-.flexbox1, .flexbox3{
+.flexbox1{
     display: flex;
     flex-wrap: wrap;
-    max-width: 30rem;
+    max-width: 100%;
+}
+
+.flexbox3{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: right;
 }
 
 .img1, .img2{
