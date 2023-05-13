@@ -40,7 +40,7 @@ header{
 
 .container_menu{
     width: 100%;
-    height: 75px;
+    height: 55px;
     background-color: steelblue;
     padding: 0px 20px;
     display: flex;
@@ -56,7 +56,7 @@ header{
 }
 
 nav{
-    height: 75rem;
+    height: 55px;
 } 
 
 ul, li{
@@ -69,11 +69,12 @@ nav > ul{
     align-self: center;
     padding: 0;
     /*border: 1px solid red;*/
-    height: 75rem%;
+    height: 100%;
+    margin: 0;
 }
 
 nav > ul > li{
-    height: 73px;
+    height: 100%;
     width: 120px;
     align-items: center;
 }
@@ -81,11 +82,11 @@ nav > ul > li{
 nav > ul > li > a{
     color: white;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none;
     display: flex;
-    text-align: center;
-    padding: 20px 14px;
+    justify-content: center;
+    padding: 18px 14px;
     transition: all 300ms ease;
     /*border: black solid 1px;*/
 }
