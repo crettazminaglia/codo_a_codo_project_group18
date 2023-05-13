@@ -91,10 +91,6 @@ nav > ul > li > a{
     /*border: black solid 1px;*/
 }
 
-nav > ul > li:first-child > a{
-    padding: 20px 35px;
-}
-
 nav > ul > li > a:hover{
     transform: scale(1.1);
     background: #0074C7;
