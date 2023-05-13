@@ -398,17 +398,6 @@ footer{
         width: 100%;
         margin-right: .5%;
     }
-    
-    nav > ul > li > a{
-        height: 75%;
-        width: 75%;
-       /* padding: 20px; */
-        font-size: 14px;
-    }
-
-   /* nav > ul > li:first-child > a{
-        padding: 25px;
-    } */
 
     nav > ul > li > ul > li > a{
         font-size: 10px;
@@ -448,13 +437,9 @@ footer{
     }
 
     nav > ul > li > a{
-        height: 75%;
-        width: 75%;
+       /* height: 75%;
+        width: 75%; */
         font-size: 12px;
-    }
-
-    nav > ul > li:first-child{
-        padding: 0px;
     }
 
     nav > ul > li > ul{
@@ -480,8 +465,20 @@ footer{
     }
 }
 
+@media screen and (max-width: 525px) {
+    nav > ul > li {
+        width: 100px;
+    }
+}
+
 @media screen and (max-width: 400px) {
-    
+    nav > ul > li > a{
+        /*height: 75%;
+        width: 55%;*/
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
      /*triangulo*/
      nav > ul > li > ul:before{
         top: -12px;
