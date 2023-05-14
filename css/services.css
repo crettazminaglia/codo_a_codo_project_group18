@@ -39,8 +39,12 @@ header{
 
 /* Barra del menu */
 .container_menu{
+    display: flex;
+    max-width: 1920px;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 70px;
+    height: 50px;
     background-color: steelblue;
     padding: 0px 20px;
 }
