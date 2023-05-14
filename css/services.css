@@ -70,9 +70,9 @@ nav ul li{
     position: relative;
 }
 
-nav > ul > li:first-child > a{
+/*nav > ul > li:first-child > a{
     padding: 20px 35px;
-}
+}*/
 
 
 nav > ul > li > a{
@@ -370,4 +370,9 @@ footer {
 
 .fa-instagram{
     color: black;
+}
+
+/*---tamaño boton contacto---*/
+.fa-sharp, .fa-house{
+    font-size: 1.5rem;
 }
