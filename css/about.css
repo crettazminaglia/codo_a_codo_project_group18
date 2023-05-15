@@ -49,11 +49,21 @@ header{
 }
 
 
-  
-    
-  
-    
+.titulo1{
+    /* border: 5px solid yellow;*/
+    padding: 4rem 10%;
+    color: #fff;
+    font-size: 55px;
+    font-weight: bolder;
 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    background-image: url(../img/conexion-titulo1.png);
+    background-size: cover;
+}
+    
 .menu{
     max-width: 75rem;
     margin: auto;
@@ -128,7 +138,7 @@ h1:hover{
 }
 
 body{
-    background-image: url(../img/fondo.avif);
+    background-image: url(../img/background-puntos.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
