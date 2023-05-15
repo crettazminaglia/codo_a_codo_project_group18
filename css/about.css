@@ -38,11 +38,21 @@ header{
 }
 
 .container_menu{
+    display: flex;
+    max-width: 1920px;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 70px;
+    height: 50px;
     background-color: steelblue;
     padding: 0px 20px;
 }
+
+
+  
+    
+  
+    
 
 .menu{
     max-width: 75rem;
@@ -159,12 +169,57 @@ h2:hover{
     transform: scale(1.2);
 }
 
-footer{
-    background-color: rgba(6, 66, 134, 0.4);
-    padding: 1rem 1rem;
-    position: sticky;
-    top: 0;
-    animation-name: cambiarColorFondo;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;   
+/* Footer */
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    *color: #fff;
+  }
+
+#footer-content p{
+    position: relative;
+    font-size: 1.2em;
+    color: rgb(14, 85, 143)
+}
+ 
+#footer-content {
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Iconos RRSS */
+
+.fa-brands:hover{
+    color: grey;
+    font-size: 32px;
+
+}
+
+.fa-brands{
+    font-size: 30px;
+    color: steelblue;
+}
+
+.fa-youtube{
+    color: red;
+}
+
+.fa-github{
+    color: black;
+}
+
+.fa-facebook{
+    color: blue;
+}
+
+.fa-instagram{
+    color: black;
+}
+
+/*---tamaño boton contacto---*/
+.fa-sharp, .fa-house{
+    font-size: 1.5rem;
 }
