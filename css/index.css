@@ -136,8 +136,8 @@ header{
 main{
     display: flex;
     justify-content: space-between;
-    margin-top: 15rem;
-    margin-bottom: 6.2rem;
+    margin-top: 12rem;
+    margin-bottom: 3.6rem;
     padding: 10px;
 }
 
@@ -163,7 +163,7 @@ main{
 .img1, .img2{
     max-width: 480px;
     width: 80%;
-    height: 555px;
+    height: 650px;
     border-radius: 5%;
 }
 
@@ -171,7 +171,8 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 700px;
+    max-width: 800px;
+    max-height: 300px;
     width: 90%;
     padding: 5px;
 }
@@ -183,7 +184,7 @@ main{
     font-size: 1.8rem;
     border-radius: 1rem;
     background-color: rgba(255, 255, 255, 0.257);
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     padding: 10px;
     transition: all 0.25s;
 }
@@ -201,7 +202,7 @@ main{
     border-radius: 1rem;
     font-weight: 600;
     background-color: rgba(255, 255, 255, 0.171);
-    margin: 20px;
+    margin: 20px 20px 50px 20px;
     padding: 10px 10px 10px 10px;
     line-height: 105%;
     transition: all 0.25s;
@@ -214,7 +215,6 @@ main{
 
 
 /* ===== Footer ===== */
-
 
 footer {
     position: relative;
