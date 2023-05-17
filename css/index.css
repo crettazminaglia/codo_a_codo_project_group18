@@ -201,6 +201,7 @@ main{
     background-color: rgba(255, 255, 255, 0.171);
     margin: 20px;
     padding: 10px 10px 10px 10px;
+    line-height: 105%;
 }
 
 .p-box2:hover{
@@ -214,10 +215,10 @@ main{
 
 footer {
     position: relative;
-    bottom: 0;
+    bottom: 5px;
     width: 100%;
     background-color: rgba(233, 232, 236, 0.793);
-  }
+}
 
 #footer-content p{
     position: relative;

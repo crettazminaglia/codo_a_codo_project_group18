@@ -39,8 +39,12 @@ header{
 
 /* Barra del menu */
 .container_menu{
+    display: flex;
+    max-width: 1920px;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 70px;
+    height: 50px;
     background-color: steelblue;
     padding: 0px 20px;
 }
@@ -66,9 +70,9 @@ nav ul li{
     position: relative;
 }
 
-nav > ul > li:first-child > a{
+/*nav > ul > li:first-child > a{
     padding: 20px 35px;
-}
+}*/
 
 
 nav > ul > li > a{
@@ -366,4 +370,9 @@ footer {
 
 .fa-instagram{
     color: black;
+}
+
+/*---tamaño boton contacto---*/
+.fa-sharp, .fa-house{
+    font-size: 1.5rem;
 }
