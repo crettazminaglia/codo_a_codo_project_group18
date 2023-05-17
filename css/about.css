@@ -147,31 +147,60 @@ body{
 
 #about{
     text-align: center;
-    border-color: black;
     margin: 2rem;
     height: auto;
     overflow: auto;
+    font-size: x-large;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+    transform: translate(5px, 5px);
+}
+
+#paragraph1{
+    text-align: center;
+    font-size: large;
+    margin: 3rem;
+    padding: 1rem;
+    line-height: 2;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #articles_section article{
     text-align: center;
-    border: 1px solid #000;
-    margin: 2rem;
-    padding: 2rem 1 rem;
+    margin: 4rem;
     height: auto;
     overflow: auto;
+    padding: 1rem;
+    font-size: large;
+    padding: 1rem;
+    justify-content: center;
     transform: translate(5px, 5px);
+    line-height: 2;
+       
 }
 
 #article_section article h2{
     margin-bottom: 1rem;
+    justify-content: center;
+    text-align: center;
+    font-size: x-large;
+}
+
+#carreras{
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
 }
 
 #articles_section article button{
     padding: .5rem;
     font-weight: bold;
     border: none;
-    background-color: rgba(6, 66, 134, 0.4);
+    background-color: rgba(9, 17, 95, 0.4);
     border-radius: 5px;  
 }
 
