@@ -50,8 +50,6 @@ header{
 .menu{
     width: 90%;
     height: 100%;
-    /*margin-right: 2%;
-    border: solid 2px green; */
     justify-content: space-between;
 }
 
@@ -305,9 +303,9 @@ h3::before{
 
 /*FOOTER*/
 
-footer{
+/*footer{
     border: solid 0.5px sandybrown;
-}
+}*/
 
 #footer-container{
     display: flex;
@@ -316,14 +314,54 @@ footer{
 }
 
 .flex-item-footer{
-    border: solid .5px rebeccapurple;
+    /*border: solid .5px rebeccapurple;*/
     align-self: center;
+}
+
+.social-icons{
+    height: 90px;
+}
+
+footer>#footer-container>nav>p{
+    color: steelblue;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .social-icons > a{
     font-size: 30px;
     padding: .75rem;
     row-gap: .5rem;
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+.fa-github{
+    color: #000;
+}
+
+.fa-instagram{
+    width: 29px;
+    padding-left: 1px;
+    color: #fff;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    align-self: center;
+}
+
+.fa-twitter{
+    color: rgb(29, 155, 240);
+}
+
+.fa-linkedin{
+    color: rgb(0, 119, 181);
+}
+
+.fa-youtube{
+    color: red;
+}
+
+.social-icons > a > .fab:hover{
+    font-size: 33px;
 }
 
 
@@ -409,6 +447,16 @@ footer{
     }
 }
 
+@media screen and (max-width: 525px) {
+    nav > ul > li {
+        width: 100px;
+    }
+    
+    .social-icons > a{
+        padding: .65rem;
+    }
+}
+
 @media screen and (max-width: 480px){
     .header_superior{
         width: 100%;
@@ -464,11 +512,28 @@ footer{
         padding: .5rem;
         font-size: 28px;
     }
+    .social-icons > a{
+        font-size: 25px;
+        padding: .50rem; 
+    }
+
+    .fa-instagram{
+        padding-left: 3px;
+    }
+
+    .social-icons > a > .fab:hover{
+        font-size: 27px;
+    }
 }
 
-@media screen and (max-width: 525px) {
-    nav > ul > li {
-        width: 100px;
+@media screen and (max-width: 430px) {
+    .social-icons > a{
+        font-size: 20px;
+        padding: .40rem; 
+    }
+
+    .fa-instagram{
+        width: 24px;
     }
 }
 
@@ -489,6 +554,11 @@ footer{
     .titulo1{
         padding: 2rem 5%;
         font-size: 40px;
+    }
+
+    .social-icons > a{
+        font-size: 19px;
+        padding: .20rem; 
     }
 }
 
