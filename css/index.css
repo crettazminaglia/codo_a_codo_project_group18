@@ -169,9 +169,8 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: start;
-    max-width: 800px;
-    width: 100%;
+    max-width: 700px;
+    width: 90%;
     padding: 5px;
 }
 
@@ -179,29 +178,31 @@ main{
 
     font-weight: bolder;
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     border-radius: 1rem;
     background-color: rgba(255, 255, 255, 0.257);
     margin-bottom: 30px;
-    padding: 8px;
+    padding: 10px;
+    transition: all 0.25s;
 }
 
 .h2-box2:hover{
     transform: scale(1.1);
     box-shadow: rgba(0, 0, 0, 0.461) -5px 5px;
-
 }
 
 .p-box2{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     max-height: 10rem;
-    overflow: hidden;
+    overflow-y: auto;
     text-align: center;
     border-radius: 1rem;
+    font-weight: 600;
     background-color: rgba(255, 255, 255, 0.171);
     margin: 20px;
     padding: 10px 10px 10px 10px;
     line-height: 105%;
+    transition: all 0.25s;
 }
 
 .p-box2:hover{
@@ -282,35 +283,12 @@ footer {
     }
 
     main{
-        display: flex;
-        justify-content: space-between;
         margin-top: 13.5rem;
         margin-bottom: 4.6rem;
-        padding: 10px;
-    }
-}
-
-
-@media (max-width: 662px){
-
-    main{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 13.5rem;
-        margin-bottom: 4.6rem;
-        padding: 10px;
     }
 }
 
 @media (max-width: 610px){
-
-    main{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 13.5rem;
-        margin-bottom: 4.6rem;
-        padding: 10px;
-    }
 
     .search input{
         display: none;
@@ -320,7 +298,6 @@ footer {
         justify-content: center;
     }
 }
-
 
 @media (max-width: 545px) {
 
@@ -352,11 +329,8 @@ footer {
     }
 
     main{
-        display: flex;
-        justify-content: space-between;
         margin-top: 10rem;
         margin-bottom: 8.1rem;
-        padding: 10px;
     }
 
 }
@@ -364,43 +338,20 @@ footer {
 @media (max-width: 532px){
 
     main{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 10rem;
         margin-bottom: 5.6rem;
-        padding: 10px;
     }
 }
 
 @media (max-width: 458px){
 
     main{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 10rem;
         margin-bottom: 3.2rem;
-        padding: 10px;
-    }
-}
-
-@media (max-width: 407px){
-
-    main{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 10rem;
-        margin-bottom: 3.2rem;
-        padding: 10px;
     }
 }
 
 @media (max-width: 362px){
 
     main{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 10rem;
         margin-bottom: 2.5rem;
-        padding: 10px;
     }
 }
