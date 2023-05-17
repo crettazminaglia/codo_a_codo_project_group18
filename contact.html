@@ -132,35 +132,52 @@
                 <script>
 
                     function validarForm(){
+                        let datosOk = false;
                         const form = document.getElementsByTagName("form")[0];
                         console.log(form);
 
                         const businessName = form[1].value;
-                        console.log(businessName);
+                        //console.log(businessName);
+                       if(businessName.length <1){
+                            alert("Por favor ingrese el nombre de su emprendimiento.");
+                            form[1].focus();
+                          }else{
+                            datosOk = true;
+                          }
 
- //                       if(businessName.length <1){
- //                           alert("Por favor ingrese el nombre de su emprendimiento.");
- //                           form[1].focus();
- //                       }
+                        const name = form[2].value;
+                        //console.log(name);
+                        if(name.length <2){
+                            alert("Por favor ingrese un nombre válido.");
+                            form[2].focus();
+                            datosOk = false;
+                        }else{
+                            datosOk = true;
+                        }
 
-  //                      const Name = form[2].value;
-  //                      console.log(businessName);
+                        const lastName = form[3].value;
+                        //console.log(lastName);
+                        if(lastName.length <2){
+                            alert("Por favor ingrese un apellido válido.");
+                            form[3].focus();
+                            datosOk = false;
+                        }else{
+                            datosOk = true;
+                        }
 
-  //                      if(Name.length <2){
-  //                          alert("Por favor ingrese un nombre válido.");
-  //                          form[2].focus();
-  //                      }
+                       /* const phone = form[5].value;
+                        console.log(phone);
+                        if(phone.length <11111111){
+                            alert("Por favor ingrese un telefono válido.");
+                            form[5].focus();
+                            datosOk = false;
+                        }else{
+                            datosOk = true;
+                        }*/
 
-   //                     const lastName = form[3].value;
-   //                     console.log(lastName);
-
-    //                    if(lastName.length <2){
-    //                        alert("Por favor ingrese un apellido válido.");
-    //                        form[3].focus();
-     //                   }
-
-                        
-
+                        if(datosOk){
+                            alert("El formulario ha sido enviado exitosamente")
+                        }
                     }
                 </script>
             </section>
