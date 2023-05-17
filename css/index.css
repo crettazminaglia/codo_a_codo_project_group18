@@ -50,18 +50,19 @@ header{
 /* ===== Logo ===== */
 
 #header-container1{
-    max-width: 1920px;
-    height: 150px;
-    margin: auto;
-    padding: 0px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1920px;
+    height: 110px;
+    margin: auto;
+    padding: 0px 20px;
 }
 
 .img_box{
     display: flex;
     width: 100%;
+    padding-top: 25px;
     justify-content: space-around;
 }
 
@@ -70,9 +71,10 @@ header{
 }
 
 .search input{
-    width: 200px;
-    height: 30px;
+    width: 300px;
+    height: 40px;
     padding: 10px;
+    margin-right: 40px;
 }
 
 /* ===== Menu ===== */
