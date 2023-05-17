@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Merriweather', serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /* HEADER */
@@ -169,6 +169,7 @@ body{
     color: #fff;
     font-size: 55px;
     font-weight: bolder;
+    font-family: 'Merriweather';
 
     display: flex;
     justify-content: center;

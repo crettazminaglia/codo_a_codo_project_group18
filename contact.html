@@ -12,14 +12,14 @@
     <!--Favicon-->
     <link rel="shortcut icon" href="./img/FaviconCoDEVC.ico" type="image/x-icon">
 
-    <!--Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poller+One&display=swap" rel="stylesheet">
-    
+    <!--Google fonts-->  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
 
      <!--Animaciones-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -83,8 +83,8 @@
                             <legend class="legend">Datos personales</legend>
 
                             <div class="mb-3">
-                                <label for="businessname" class="form-label">Nombre del emprendimiento</label>
-                                <input type="text" class="form-control" id="businessname" name="businessname" placeholder="Nombre del emprendimiento" aria-describedby="emailHelp">
+                                <label for="businessName" class="form-label">Nombre del emprendimiento</label>
+                                <input type="text" class="form-control" id="businessName" name="businessName" placeholder="Nombre del emprendimiento" aria-describedby="emailHelp">
                             </div>
 
                             <div class="mb-3">
@@ -123,11 +123,63 @@
                                 <label class="form-check-label" for="mejoraDeSitioWeb">Mejora de Sitio Web</label>
                             </div>
 
-                            <button type="submit">Enviar</button>
+                            <button type="submit" onclick="validarForm()">Enviar</button>
                             <button type="reset">Borrar todo</button>
                         </div>
                     </fieldset>
                 </form>
+
+                <script>
+
+                    function validarForm(){
+                        let datosOk = false;
+                        const form = document.getElementsByTagName("form")[0];
+                        console.log(form);
+
+                        const businessName = form[1].value;
+                        //console.log(businessName);
+                       if(businessName.length <1){
+                            alert("Por favor ingrese el nombre de su emprendimiento.");
+                            form[1].focus();
+                          }else{
+                            datosOk = true;
+                          }
+
+                        const name = form[2].value;
+                        //console.log(name);
+                        if(name.length <2){
+                            alert("Por favor ingrese un nombre válido.");
+                            form[2].focus();
+                            datosOk = false;
+                        }else{
+                            datosOk = true;
+                        }
+
+                        const lastName = form[3].value;
+                        //console.log(lastName);
+                        if(lastName.length <2){
+                            alert("Por favor ingrese un apellido válido.");
+                            form[3].focus();
+                            datosOk = false;
+                        }else{
+                            datosOk = true;
+                        }
+
+                       /* const phone = form[5].value;
+                        console.log(phone);
+                        if(phone.length <11111111){
+                            alert("Por favor ingrese un telefono válido.");
+                            form[5].focus();
+                            datosOk = false;
+                        }else{
+                            datosOk = true;
+                        }*/
+
+                        if(datosOk){
+                            alert("El formulario ha sido enviado exitosamente")
+                        }
+                    }
+                </script>
             </section>
             
             <h2 id="subtitulo" class="flex-item0 h2">Dónde nos encontrás</h2>
