@@ -180,7 +180,7 @@ body{
     justify-content: center;
     transform: translate(5px, 5px);
     line-height: 2;
-       
+           
 }
 
 #article_section article h2{
@@ -194,6 +194,17 @@ body{
     font-weight: bold;
     justify-content: center;
     text-align: center;
+}
+
+#imagen{
+    justify-content: center;
+    width: 330px;
+    height: 220px;
+}
+
+#persona{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #articles_section article button{
