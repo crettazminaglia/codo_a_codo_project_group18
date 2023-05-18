@@ -221,55 +221,72 @@ h2:hover{
 
 /* Footer */
 
-footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    *color: #fff;
-  }
+/*FOOTER*/
 
-#footer-content p{
-    position: relative;
-    font-size: 1.2em;
-    color: rgb(14, 85, 143)
-}
- 
-#footer-content {
-    margin: 0 auto;
-    text-align: center;
-    padding: 10px;
+#footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-/* Iconos RRSS */
-
-.fa-brands:hover{
-    color: grey;
-    font-size: 32px;
-
+.flex-item-footer{
+    /*border: solid .5px rebeccapurple;*/
+    align-self: center;
 }
 
-.fa-brands{
-    font-size: 30px;
+.social-icons{
+    height: 90px;
+    margin: 4rem;
+}
+
+footer>#footer-container>nav>p{
     color: steelblue;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.social-icons > a{
+    font-size: 30px;
+    padding: .75rem;
+    row-gap: .5rem;
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+.fa-github{
+    color: #000;
+}
+
+.fa-instagram{
+    width: 29px;
+    padding-left: 1px;
+    color: #fff;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    align-self: center;
+}
+
+.fa-twitter{
+    color: rgb(29, 155, 240);
+}
+
+.fa-linkedin{
+    color: rgb(0, 119, 181);
 }
 
 .fa-youtube{
     color: red;
 }
 
-.fa-github{
-    color: black;
+.social-icons > a > .fab:hover{
+    font-size: 33px;
 }
 
-.fa-facebook{
-    color: blue;
+
+#copy-right{
+    text-align: center;
+    margin: 1rem;
 }
 
-.fa-instagram{
-    color: black;
-}
-
-/*---tamaño boton contacto---*/
-.fa-sharp, .fa-house{
-    font-size: 1.5rem;
+#seguinos{
+    margin: 1rem;
 }
