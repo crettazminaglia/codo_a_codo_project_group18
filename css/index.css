@@ -17,23 +17,22 @@
 html{
     display: flex;
     max-height: 108rem;
-    max-width: 120rem;
+    max-width: 126rem;
     height: 100%;
-    background-image: url(../img/background-puntos.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
 /* ===== Body =====*/
 
 body{
-    background-image: url(../img/firma.png);
-    background-attachment: fixed;
+    background-image: url(../img/background-puntos.png);
+    background-position: center;
     background-repeat: repeat;
-    background-size: cover;
-    background-size: 0.5rem;
-    min-height: 100vh;
+    background-size: 100%;
+    max-width: 1920;
     width: 100%;
 }
 
@@ -45,6 +44,7 @@ header{
     top: 0;
     left: 0;
     background: white;
+    z-index: 100;
 }
 
 /* ===== Logo ===== */
@@ -217,8 +217,10 @@ main{
 
 #footer-container{
     display: flex;
+    position: relative;
     flex-direction: row;
     justify-content: space-around;
+    bottom: 0;
 }
 
 .flex-item-footer{
@@ -353,6 +355,23 @@ footer>#footer-container>nav>p{
     main{
         margin-bottom: 5.6rem;
     }
+}
+
+@media (max-width: 480px) {
+
+    .social-icons > a{
+        font-size: 25px;
+        padding: .50rem; 
+    }
+
+    .fa-instagram{
+        padding-left: 3px;
+    }
+
+    .social-icons > a > .fab:hover{
+        font-size: 27px;
+    }
+    
 }
 
 @media (max-width: 458px){
