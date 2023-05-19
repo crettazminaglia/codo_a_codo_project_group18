@@ -133,7 +133,7 @@ main{
     display: flex;
     justify-content: space-between;
     margin-top: 12rem;
-    margin-bottom: 3.6rem;
+    margin-bottom: 6rem;
     padding: 10px;
     height: 70%;
 }
@@ -305,7 +305,7 @@ footer {
 
     main{
         margin-top: 10rem;
-        margin-bottom: 22rem;
+        margin-bottom: 27rem;
     }
 
     .search input{
