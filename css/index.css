@@ -16,13 +16,10 @@
 
 html{
     display: flex;
-    max-height: 108rem;
-    max-width: 126rem;
-    height: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    
+    height: 100%;
 }
 
 /* ===== Body =====*/
@@ -32,7 +29,6 @@ body{
     background-position: center;
     background-repeat: repeat;
     background-size: 100%;
-    max-width: 1920;
     width: 100%;
 }
 
@@ -139,6 +135,7 @@ main{
     margin-top: 12rem;
     margin-bottom: 3.6rem;
     padding: 10px;
+    height: 70%;
 }
 
 /* ===== boxes ===== */
@@ -281,7 +278,13 @@ footer>#footer-container>nav>p{
 
 /* ===== Query ===== */
 
+@media (max-width: 1200px) {
 
+    .flexbox1, .flexbox3{
+        display: none;
+    }
+    
+}
 
 @media (max-width: 735px) {
     #header-container{
@@ -291,10 +294,6 @@ footer>#footer-container>nav>p{
     .img_box{
         width: 360px;
         justify-content: center;
-    }
-
-    .flexbox1, .flexbox3{
-        display: none;
     }
 
     main{
