@@ -216,12 +216,24 @@ main{
 
 /*FOOTER*/
 
-#footer-container{
-    display: flex;
+footer {
     position: relative;
-    flex-direction: row;
-    justify-content: space-around;
     bottom: 0;
+    width: 100%;
+    *color: #fff;
+  }
+
+#footer-content p{
+    position: relative;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: steelblue
+}
+ 
+#footer-content {
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
 }
 
 .flex-item-footer{
@@ -232,17 +244,13 @@ main{
     height: 90px;
 }
 
-footer>#footer-container>nav>p{
-    color: steelblue;
-    font-weight: bold;
-    font-size: 20px;
-}
-
 .social-icons > a{
     font-size: 30px;
     padding: .75rem;
-    row-gap: .5rem;
+    margin-right: 20px;
+    row-gap: 1rem;
     box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    border-radius: 50%;
 }
 
 .fa-github{
@@ -272,11 +280,6 @@ footer>#footer-container>nav>p{
 
 .social-icons > a > .fab:hover{
     font-size: 33px;
-}
-
-
-#copy-right{
-    text-align: center;
 }
 
 
