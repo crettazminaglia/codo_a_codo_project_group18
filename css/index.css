@@ -1,25 +1,16 @@
 * {
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
     text-decoration: none;
 }
 
-:root {
-    /* ===== Colores ===== */
-    --html-color: linear-gradient(rgb(177, 213, 215) 5%, rgb(135, 175, 208), rgb(177, 213, 215) 90%);
-    --nav-a-color: linear-gradient(lightblue, steelblue);
-}
 
 /* ===== HTML =====*/
 
 html {
     display: flex;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
 }
 
 /* ===== Body =====*/
@@ -130,7 +121,7 @@ header {
 main {
     padding: 10px 20px;
     margin-top: 160px;
-    height: 100%;
+    min-height: 600px;
 }
 
 #main_container {
@@ -159,9 +150,8 @@ main {
 
 #flex-container2 {
     justify-content: center;
-    max-width: 800px;
-    max-height: 300px;
-    width: 90%;
+    max-width: 1000px;
+    width: 100%;
 }
 
 .h2-box2 {
@@ -198,11 +188,13 @@ main {
     box-shadow: rgba(0, 0, 0, 0.461) -5px 5px;
 }
 
-#main_title_api {
+
+.main_title_api {
     text-align: center;
 }
 
-/*FOOTER*/
+
+/* Footer */
 
 footer {
     position: relative;
@@ -211,11 +203,11 @@ footer {
     *color: #fff;
 }
 
-#footer-content p {
+#footer-content p{
     position: relative;
     font-weight: bold;
     font-size: 1.2em;
-    color: steelblue;
+    color: steelblue
 }
 
 #footer-content {
@@ -224,50 +216,55 @@ footer {
     padding: 10px;
 }
 
-.social-icons {
+.flex-item-footer{
+    align-self: center;
+}
+
+.social-icons{
     height: 90px;
 }
 
-.social-icons > a {
+.social-icons > a{
     font-size: 30px;
     padding: .75rem;
     margin-right: 20px;
     row-gap: 1rem;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
     border-radius: 50%;
 }
 
-.fa-github {
+.fa-github{
     color: #000;
 }
 
-.fa-instagram {
+.fa-instagram{
     width: 29px;
     padding-left: 1px;
     color: #fff;
     background: #d6249f;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
     align-self: center;
 }
 
-.fa-twitter {
+.fa-twitter{
     color: rgb(29, 155, 240);
 }
 
-.fa-linkedin {
+.fa-linkedin{
     color: rgb(0, 119, 181);
 }
 
-.fa-youtube {
+.fa-youtube{
     color: red;
 }
 
-.social-icons > a > .fab:hover {
-    font-size: 33px;
+.social-icons > a > .fab:hover{
+    font-size: 35px;
 }
 
-.flex-item-footer {
-    align-self: center;
+/*---tamaño boton contacto---*/
+.fa-sharp, .fa-house{
+    font-size: 1.5rem;
 }
 
 
