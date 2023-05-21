@@ -132,8 +132,6 @@ header{
 main{
     display: flex;
     justify-content: space-between;
-    margin-top: 12rem;
-    margin-bottom: 6rem;
     padding: 10px;
     height: 70%;
 }
@@ -301,11 +299,6 @@ footer {
     .img_box{
         width: 360px;
         justify-content: center;
-    }
-
-    main{
-        margin-top: 10rem;
-        margin-bottom: 27rem;
     }
 
     .search input{
