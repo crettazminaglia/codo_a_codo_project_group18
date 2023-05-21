@@ -85,11 +85,6 @@ nav ul li{
     position: relative;
 }
 
-nav > ul > li:first-child > a{
-    padding: 20px 35px;
-}
-
-
 nav > ul > li > a{
     height: 100%;
     width: 100%;
