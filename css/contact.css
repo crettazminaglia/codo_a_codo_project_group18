@@ -231,9 +231,7 @@ h3::before{
 
 /*FOOTER*/
 
-
 footer {
-    border: yellow 3px solid;
     bottom: 0;
     width: 100%;
 }
@@ -242,10 +240,12 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    height: 120px;
 }
 
 .flex-item-footer{
     align-self: center;
+    height: 100%;
 }
 
 .social-icons{
@@ -300,6 +300,7 @@ footer>#footer-container>nav>p{
 
 #copy-right{
     text-align: center;
+    padding-top: 1rem;
 }
 
 /* RESPONSIVE */
@@ -410,28 +411,32 @@ footer>#footer-container>nav>p{
         padding: .5rem;
         font-size: 28px;
     }
+
+    #footer-container{
+        height: 100px;
+    }
+
+    footer>#footer-container>nav>p{
+        margin-bottom: .5rem;
+        font-size: 18px;
+    }
+
     .social-icons > a{
         font-size: 25px;
         padding: .50rem; 
     }
 
     .fa-instagram{
-        padding-left: 3px;
+        padding-left: 6px;
+        padding-top: 6px;
     }
 
     .social-icons > a > .fab:hover{
         font-size: 27px;
     }
-}
 
-@media screen and (max-width: 430px) {
-    .social-icons > a{
-        font-size: 20px;
-        padding: .40rem; 
-    }
-
-    .fa-instagram{
-        width: 24px;
+    #copy-right{
+        padding-top: 0rem;
     }
 }
 
@@ -444,10 +449,5 @@ footer>#footer-container>nav>p{
     .titulo1{
         padding: 2rem 5%;
         font-size: 40px;
-    }
-
-    .social-icons > a{
-        font-size: 19px;
-        padding: .20rem; 
     }
 }
