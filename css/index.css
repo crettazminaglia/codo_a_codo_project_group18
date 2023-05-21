@@ -130,7 +130,7 @@ header {
 main {
     padding: 10px 20px;
     margin-top: 160px;
-    height: 90vh;
+    height: 100%;
 }
 
 #main_container {
