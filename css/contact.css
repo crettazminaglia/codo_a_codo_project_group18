@@ -24,7 +24,6 @@ header{
     height: 110px;
     margin: auto;
     padding: 0px 20px;
-    border: red solid 2px;
 }
 
 .img_box{
@@ -32,7 +31,6 @@ header{
     width: 100%;
     padding-top: 15px;
     justify-content: space-around;
-    border: blue solid 2px;
 }
 
 .search input{
@@ -51,7 +49,6 @@ header{
     height: 50px;
     background-color: steelblue;
     padding: 0px 20px;
-    border: violet solid 2px;
 }
 
 .menu{
@@ -79,7 +76,6 @@ header{
     font-size: 14px;
     transition: all 300ms ease;
     text-decoration: none;
-    border: orangered solid 2px;
 }
 
 .menu > ul > li > a:hover{
