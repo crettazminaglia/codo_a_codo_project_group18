@@ -54,6 +54,11 @@
             </nav>
     </header>
         <main>
+
+          <h1> 
+            <span class="titulo1">Conexión<br>CoDEVConnect</span>
+        </h1>
+        
             <section>
               <h1 id="main_title">Equipo Multidiciplinar de profesionales</h1>
               <br>
@@ -80,7 +85,7 @@
               <section class="card">
                   <img src="img/design.jpg">
                   <h4>Diseño Web</h4>
-                  <p>¿Buscas crear una presencia en línea atractiva para tu negocio? ¡Tenemos la solución para ti! Ofrecemos servicios de diseño web personalizados y adaptados a las necesidades de tu empresa.</p>
+                  <p>¿Buscas crear una presencia en línea impactante y atractiva para tu negocio? ¡Tenemos la solución perfecta para ti! Ofrecemos servicios de diseño web adaptados a las necesidades de tu empresa.</p>
                   <a href="#"></a>
               </section>
               
@@ -95,27 +100,8 @@
                   
               </section>
           </section>
-          <script>
-            function obtenerUsuarioRandom(){
-                const seccion = document.getElementById("contenido");
-                seccion.innerHTML = "<p> °°° </p>"
-    
-                fetch("https://randomuser.me/api/?nat=es")
-                .then(res => res.json())
-                .then(data => {
-                   seccion.innerHTML =
-                            `
-                            <seccion>
-                                <img src="${data.results[0].picture.large}" width="100px" class="img-fluid rounded-circle">
-                                <p>${data.results[0].name.first}</p>
-                                <p>${data.results[0].name.last}</p>
-                            </seccion>
-                            
-                            `
-                })
-                .catch(err => console.log(err))
-            }
-        </script>
+          <script src="./js/randomUser.js"></script>
+
         </section>
         <section>
           <footer>
@@ -138,6 +124,11 @@
     
 </body>
 </html>
+
+
+
+
+
 
 
 

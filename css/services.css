@@ -70,10 +70,6 @@ nav ul li{
     position: relative;
 }
 
-/*nav > ul > li:first-child > a{
-    padding: 20px 35px;
-}*/
-
 
 nav > ul > li > a{
     height: 100%;
@@ -99,62 +95,25 @@ nav > ul > li > a:hover{
     transform: scale(1.1);
     background: lightskyblue;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-
 }
 
-/*sub-menu
-nav ul li ul{
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    background: steelblue;
-    position: absolute;
-    top: 90px;
-    padding: 14px 0px;
-    opacity: 0;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-    z-index: 10;
-    transition: all 300ms ease;
-}
+/*TITULO PRINCIPAL*/
 
-nav ul li:hover ul{
-    visibility: visible;
-    opacity: 1;
-    top: 70px;
-}
-
-
-nav ul li ul:before{
-    content: '';
-    width: 0;
-    height: 0;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-bottom: 12px solid white;
-    position: absolute;
-    top: -12px;
-    left: 20px;
-}
-
-nav ul li ul li a{
-    display: block;
-    color: white;
-    padding: 6px;
-    padding-left: 14px;
-    margin-top: 10px;
-    font-size: 14px;
-    text-transform: uppercase;
-    transition: all 300 ease;
-}
-
-nav ul li ul li a:hover{
-    background: #0074C7;
+.titulo1{
+    /* border: 5px solid yellow;*/
+    padding: 4rem 10%;
     color: #fff;
-    transform: scale(1.1);
-    padding-left: 30px;
-    font-size: 14px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-}*/
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: Ubuntu;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    background-image: url(../img/conexion-titulo1.png);
+    background-size: cover;
+}
 
 /* Título */
 #main_title{
@@ -322,6 +281,12 @@ body{
     }
 }
 
+/*API */
+.name p{
+    color: blue;
+    font-weight: bold;
+  }
+
 
 /* Footer */
 
@@ -388,37 +353,7 @@ footer {
 }
 
 .social-icons > a > .fab:hover{
-    font-size: 33px;
-}
-
-
-/* Iconos RRSS
-
-.fa-brands:hover{
-    color: grey;
-    font-size: 32px;
-
-}
-
-.fa-brands{
-    font-size: 30px;
-    color: steelblue;
-}
-
-.fa-youtube{
-    color: red;
-}
-
-.fa-github{
-    color: black;
-}
-
-.fa-facebook{
-    color: blue;
-}
-
-.fa-instagram{
-    color: black;
+    font-size: 35px;
 }
 
 /*---tamaño boton contacto---*/
