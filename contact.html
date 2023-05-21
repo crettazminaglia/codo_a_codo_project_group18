@@ -197,73 +197,61 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
 <script>
+    function validarForm() {
+        let datosOk = true;
 
-    function validarForm(){
-        let datosOk = false;
         const form = document.getElementsByTagName("form")[0];
-        //console.log(form);
-    
+
         const businessName = form[1].value;
-        if(businessName.length <2){
+        if (businessName.length < 2) {
             alert("Por favor ingrese el nombre de su emprendimiento.");
             form[1].focus();
-        }else{
-            datosOk = true;
+            datosOk = false;
         }
 
         const name = form[2].value;
-        if(name.length <2){
+        if (name.length < 2) {
             alert("Por favor ingrese un nombre válido.");
             form[2].focus();
             datosOk = false;
-        }else{
-            datosOk = true;
         }
 
         const lastName = form[3].value;
-        if(lastName.length <2){
+        if (lastName.length < 2) {
             alert("Por favor ingrese un apellido válido.");
             form[3].focus();
             datosOk = false;
-        }else{
-            datosOk = true;
         }
 
         const email = form[4].value;
-        validEmail = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
-        if(!validEmail.test(email)) {
+        const validEmail = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+        if (!validEmail.test(email)) {
             alert("Por favor ingrese un correo electrónico válido.");
             form[4].focus();
             datosOk = false;
-        }else{
-            datosOk = true;
         }
 
         const phone = form[5].value;
-        if(phone.length <8){
+        if (phone.length < 8) {
             alert("Por favor ingrese un telefono válido.");
             form[5].focus();
             datosOk = false;
-        }else{
-            datosOk = true;
         }
-
 
         const checkboxes = document.querySelectorAll('input[type="checkbox"]');
         let checked = false;
         checkboxes.forEach(checkbox => {
             if (checkbox.checked) {
-            checked = true;
-            datosOk = true;
+                checked = true;
             }
         });
+
         if (!checked) {
-            alert("Por favor selecciona al menos un Servicio requerido.");
+            alert("Por favor seleccione al menos un servicio requerido.");
             datosOk = false;
         }
 
-        if(datosOk = true){
-            alert("El formulario ha sido enviado exitosamente")
+        if (datosOk) {
             const businessName = form[1].value;
             console.log(businessName);
 
@@ -286,6 +274,14 @@
                     }   
                 });
             console.log("Servicios seleccionados:", selectedServices);
+            
+            alert("El formulario ha sido enviado exitosamente.");
+            return true; 
+        } else {
+            alert("Hubo un error al completar el formulario. Por favor, verifique los datos e inténtelo nuevamente.");
+            return false; 
         }
-    } 
+    }
 </script>
+
+
