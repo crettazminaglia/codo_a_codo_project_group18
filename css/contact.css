@@ -10,13 +10,107 @@ header{
     width: 100%;
     position: sticky;
     top: 0;
+    left: 0;
+    background: white;
+    z-index: 100;
+}
+
+/* ===== Logo ===== */
+#header-container1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1920px;
+    height: 110px;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+.img_box{
+    display: flex;
+    width: 100%;
+    padding-top: 25px;
+    justify-content: space-around;
+}
+
+.img_h{
+    margin-top: 30px;
+}
+
+.search input{
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    margin-right: 40px;
+}
+
+/* ===== Menu ===== */
+#header-container2{
+    display: flex;
+    max-width: 1920px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: steelblue;
+    padding: 0px 20px;
+}
+
+.menu{
+    height: 100%;
+}
+
+.menu > ul{
+    height: 100%;
+    display: flex;
+    text-decoration: none;
+}
+
+.menu ul li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+    text-decoration: none;
+}
+
+.menu > ul > li > a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 14px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 300ms ease;
+
+}
+
+.menu > ul > li > a:hover{
+    transform: scale(1.1);
+    background: lightskyblue;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+
+}
+#selected{
+    transform: scale(1.1);
+    background: lightskyblue;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+
+}
+
+/*
+
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
     margin: 0;
     background: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* border: 3px orange solid; */
 }
 
 .header_superior{
@@ -25,7 +119,6 @@ header{
     justify-content: space-between;
     align-items: center;
     margin-bottom: .25rem;
-    /*border: 2px solid pink;*/
 }
 
 .logo{
@@ -66,7 +159,6 @@ nav > ul{
     justify-content: space-between;
     align-self: center;
     padding: 0;
-    /*border: 1px solid red;*/
     height: 100%;
     margin: 0;
 }
@@ -86,7 +178,6 @@ nav > ul > li > a{
     justify-content: center;
     padding: 18px 14px;
     transition: all 300ms ease;
-    /*border: black solid 1px;*/
 }
 
 nav > ul > li > a:hover{
@@ -114,9 +205,10 @@ nav > ul > li:hover > ul{
     opacity: 1;
     top: 170px;
 }
+*/
 
 /*triangulo*/
-nav > ul > li > ul:before{
+/* nav > ul > li > ul:before{
     content: '';
     width: 0;
     height: 0;
@@ -148,7 +240,7 @@ nav > ul > li > ul > li > a:hover{
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
-
+*/
 /* CUERPO */
 
 body{
