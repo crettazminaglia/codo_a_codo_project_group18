@@ -24,17 +24,15 @@ header{
     height: 110px;
     margin: auto;
     padding: 0px 20px;
+    border: red solid 2px;
 }
 
 .img_box{
     display: flex;
     width: 100%;
-    padding-top: 25px;
+    padding-top: 15px;
     justify-content: space-around;
-}
-
-.img_h{
-    margin-top: 30px;
+    border: blue solid 2px;
 }
 
 .search input{
@@ -47,13 +45,13 @@ header{
 /* ===== Menu ===== */
 #header-container2{
     display: flex;
-    max-width: 1920px;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 50px;
     background-color: steelblue;
     padding: 0px 20px;
+    border: violet solid 2px;
 }
 
 .menu{
@@ -63,14 +61,11 @@ header{
 .menu > ul{
     height: 100%;
     display: flex;
-    text-decoration: none;
 }
 
 .menu ul li{
     height: 100%;
     list-style: none;
-    position: relative;
-    text-decoration: none;
 }
 
 .menu > ul > li > a{
@@ -83,164 +78,16 @@ header{
     text-transform: uppercase;
     font-size: 14px;
     transition: all 300ms ease;
-
+    text-decoration: none;
+    border: orangered solid 2px;
 }
 
 .menu > ul > li > a:hover{
     transform: scale(1.1);
     background: lightskyblue;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-
-}
-#selected{
-    transform: scale(1.1);
-    background: lightskyblue;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-
 }
 
-/*
-
-header{
-    width: 100%;
-    position: sticky;
-    top: 0;
-    margin: 0;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header_superior{
-    width: 85%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: .25rem;
-}
-
-.logo{
-    size: 100%;
-    margin: 0rem 1rem;
-}
-
-.Search{
-    padding: 5px;
-    align-self: right;
-}
-
-.container_menu{
-    width: 100%;
-    height: 55px;
-    background-color: steelblue;
-    padding: 0px 20px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.menu{
-    width: 90%;
-    height: 100%;
-    justify-content: space-between;
-}
-
-nav{
-    height: 55px;
-} 
-
-ul, li{
-    list-style: none;
-}
-
-nav > ul{
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
-    padding: 0;
-    height: 100%;
-    margin: 0;
-}
-
-nav > ul > li{
-    height: 100%;
-    width: 120px;
-    align-items: center;
-}
-
-nav > ul > li > a{
-    color: white;
-    text-transform: uppercase;
-    font-size: 14px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    padding: 18px 14px;
-    transition: all 300ms ease;
-}
-
-nav > ul > li > a:hover{
-    transform: scale(1.1);
-    background: #0074C7;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-}
-
-nav > ul > li > ul{
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    background: steelblue;
-    position: absolute;
-    top: 90px;
-    padding: 14px 0px;
-    opacity: 0;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-    z-index: 10;
-    transition: all 300ms ease;
-}
-
-nav > ul > li:hover > ul{
-    visibility: visible;
-    opacity: 1;
-    top: 170px;
-}
-*/
-
-/*triangulo*/
-/* nav > ul > li > ul:before{
-    content: '';
-    width: 0;
-    height: 0;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-bottom: 12px solid white;
-    position: absolute;
-    top: -12px;
-    left: 20px;
-}
-
-nav > ul > li > ul > li > a{
-    display: block;
-    color: white;
-    padding: 6px 6px 6px 14px;
-    margin-top: 10px;
-    font-size: 12px;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: all 300 ease;
-}
-
-nav > ul > li > ul > li > a:hover{
-    background: #0074C7;
-    color: #fff;
-    transform: scale(1.1);
-    padding-left: 30px;
-    font-size: 13px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-}
-
-*/
 /* CUERPO */
 
 body{
@@ -505,8 +352,8 @@ footer>#footer-container>nav>p{
 }
 
 @media screen and (max-width: 750px){
-    .header_superior{
-        width: 98%;
+    .search input{
+        margin-right: 20px;
     }
 
     .container-fluid{
@@ -523,75 +370,40 @@ footer>#footer-container>nav>p{
     }
 }
 
-
 @media screen and (max-width: 600px){
-    .menu{
-        width: 100%;
-        margin-right: .5%;
-    }
-
-    nav > ul > li > ul > li > a{
-        font-size: 10px;
-    }
-    
-    nav > ul > li > ul > li > a:hover{
-        font-size: 11px;
-    }
+.search input{
+    width: 250px;
+    margin-right: 10px;
+}
 }
 
 @media screen and (max-width: 525px) {
-    nav > ul > li {
-        width: 100px;
+    .search input{
+        width: 220px;
+        margin-right: 5px;
     }
-    
     .social-icons > a{
         padding: .65rem;
     }
 }
 
 @media screen and (max-width: 480px){
-    .header_superior{
-        width: 100%;
-    }
-
-    #item_header_superior{
-        width: 50%;
+    #header-container1{
+        padding: 0px 5px;
     }
     
-    img{
-        height: 85%;
-        width: 85%;
-    }
-
     .logo{
         margin: 0rem;
     }
-    
-    .Search{
-        width: 300px;
-        font-size: 12px;
-        padding: .5px;
+
+    img{
+        width: 95%;
+        min-width: 140px;
+        padding: 0;
     }
 
-    .container_menu{
+    #header-container2{
         padding: 0px;
-    }
-
-    nav > ul > li > a{
-       /* height: 75%;
-        width: 75%; */
-        font-size: 12px;
-    }
-
-    nav > ul > li > ul{
-        width: 150px;
-        padding: 0px;
-    }
-
-     /*triangulo*/
-     nav > ul > li > ul:before{
-        top: -18px;
-        left: 20px;
     }
 
     .flex-item0{
@@ -630,17 +442,9 @@ footer>#footer-container>nav>p{
 }
 
 @media screen and (max-width: 400px) {
-    nav > ul > li > a{
-        /*height: 75%;
-        width: 55%;*/
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-     /*triangulo*/
-     nav > ul > li > ul:before{
-        top: -12px;
-        left: 20px;
+    .search input{
+        width: 200px;
+        margin-right: 0px;
     }
 
     .titulo1{
