@@ -108,6 +108,7 @@ header {
     transform: scale(1.1);
     background: lightskyblue;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
 }
 
 #selected {
