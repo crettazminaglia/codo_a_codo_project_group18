@@ -194,40 +194,38 @@ main {
 }
 
 
-/* Footer */
+/*FOOTER*/
 
 footer {
-    position: relative;
     bottom: 0;
     width: 100%;
-    *color: #fff;
 }
 
-#footer-content p{
-    position: relative;
-    font-weight: bold;
-    font-size: 1.2em;
-    color: steelblue
-}
-
-#footer-content {
-    margin: 0 auto;
-    text-align: center;
-    padding: 10px;
+#footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 120px;
 }
 
 .flex-item-footer{
     align-self: center;
+    height: 100%;
 }
 
 .social-icons{
     height: 90px;
 }
 
+footer>#footer-container>nav>p{
+    color: steelblue;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 .social-icons > a{
     font-size: 30px;
     padding: .75rem;
-    margin-right: 20px;
     row-gap: 1rem;
     box-shadow: 0px 3px 10px rgba(0,0,0,.25);
     border-radius: 50%;
@@ -238,12 +236,15 @@ footer {
 }
 
 .fa-instagram{
-    width: 29px;
-    padding-left: 1px;
+    width: 36px;
+    height: 36px;
+    padding-left: 5px;
+    padding-top: 4px;
     color: #fff;
     background: #d6249f;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
     align-self: center;
+    border-radius: 50%;
 }
 
 .fa-twitter{
@@ -259,12 +260,17 @@ footer {
 }
 
 .social-icons > a > .fab:hover{
-    font-size: 35px;
+    font-size: 33px;
+}
+
+#copy-right{
+    text-align: center;
+    padding-top: 1rem;
 }
 
 /*---tamaño boton contacto---*/
 .fa-sharp, .fa-house{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 
