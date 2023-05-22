@@ -22,14 +22,14 @@ header{
     justify-content: space-between;
     align-items: center;
     max-width: 1920px;
-    height: 110px;
+    height: 135px;
     margin: auto;
     padding: 0px 20px;
 }
 
 /*Logo*/
 .logo img{
-    width: 180px;
+    width: 190px;
 }
 
 /*Buscador*/
