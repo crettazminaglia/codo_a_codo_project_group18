@@ -18,16 +18,18 @@ header{
 
 /*Header_superior*/
 .header_superior{
-    max-width: 75rem;
-    margin: auto;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    max-width: 1920px;
+    height: 110px;
+    margin: auto;
+    padding: 0px 20px;
 }
 
 /*Logo*/
 .logo img{
-    width: 120px;
+    width: 180px;
 }
 
 /*Buscador*/
