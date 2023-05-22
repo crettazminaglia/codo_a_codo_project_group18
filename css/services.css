@@ -33,8 +33,10 @@ header{
 /*Buscador*/
 .Search input{
     width: 300px;
+    height: 40px;
     padding: 10px;
-    border: 3px solid steelblue;
+    margin-right: 40px;
+    *border: 3px solid steelblue;
 }
 
 /* Barra del menu */
@@ -338,6 +340,7 @@ footer {
     background: #d6249f;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
     align-self: center;
+    border-radius: 30%;
 }
 
 .fa-twitter{
