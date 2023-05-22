@@ -7,26 +7,24 @@
 }
 
 header{
-    background: rgba(6, 66, 134, 0.4);
     width: 100%;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
+    background: white;
     z-index: 100;
-    padding: 1rem 1rem;
-    animation-name: cambiarColorFondo;
-    animation-duration: 10s;
-    animation-iteration-count: infinite; 
 }
 
-
 .header_superior{
-    max-width: 75rem;
-    margin: auto;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-}      
+    align-items: center;
+    max-width: 1920px;
+    height: 135px;
+    margin: auto;
+    padding: 0px 20px;
+}
+      
 
 .logo img{
     width: 120px;
@@ -34,7 +32,9 @@ header{
 
 .Search input{
     width: 300px;
-    padding: 5px;
+    padding: 10px;
+    margin-right: 40px;
+    height: 40px;
 }
 
 .container_menu{
@@ -47,23 +47,7 @@ header{
     background-color: steelblue;
     padding: 0px 20px;
 }
-
-
-.titulo1{
-    /* border: 5px solid yellow;*/
-    padding: 4rem 10%;
-    color: #fff;
-    font-size: 55px;
-    font-weight: bolder;
-
-    display: flex;
-    justify-content: center;
-    text-align: center;
-
-    background-image: url(../img/conexion-titulo1.png);
-    background-size: cover;
-}
-    
+   
 .menu{
     max-width: 75rem;
     margin: auto;
@@ -106,9 +90,19 @@ nav > ul > li > a:hover{
 
 }
 
-@keyframes cambiarColorFondo{
-    from {background-color: rgba(6, 66, 134, 0.4);}
-    to{ background-color: rgba(247, 248, 253, 0.8);}
+.titulo1{
+    /* border: 5px solid yellow;*/
+    padding: 4rem 10%;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: Ubuntu;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../img/conexion-titulo1.png);
+    background-size: cover;
+    margin: 12rem 1rem 0.5rem 0.5rem;
 }
 
 a:link{
@@ -136,15 +130,16 @@ h1:hover{
 body{
     background-image: url(../img/background-puntos.png);
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: 100%;
+    background-repeat: repeat;
     background-attachment: fixed;
 }
 
 #about{
     text-align: center;
-    margin: 2rem;
-    height: auto;
+    margin: 1rem;
+    max-width: 75rem;
+    *height: 430px;
     overflow: auto;
     font-size: x-large;
     padding: 1rem;
@@ -158,16 +153,18 @@ body{
 #paragraph1{
     text-align: center;
     font-size: large;
-    margin: 3rem;
+    margin: 1rem;
     padding: 1rem;
     line-height: 2;
     display: flex;
     flex-wrap: wrap;
+    max-width: 75rem;
+    *height: 430px;
 }
 
 #articles_section article{
     text-align: center;
-    margin: 4rem;
+    margin: 20px;
     height: auto;
     overflow: auto;
     padding: 1rem;
@@ -176,6 +173,8 @@ body{
     justify-content: center;
     transform: translate(5px, 5px);
     line-height: 2;
+    max-width: 75rem;
+    *height: 430px;
            
 }
 
@@ -294,4 +293,21 @@ footer {
 
 #copyright{
     margin: 2rem;
+}
+
+@media screen and (max-width:340px) {
+    #imagen{
+        width: 90%;
+        height: 75%;
+    }
+    
+    .Search input{
+        width: 75%;
+        margin-left: 30%;
+    }
+    .titulo1{
+        width: 100%;
+        margin-left: -0.5%;
+    }
+    
 }
